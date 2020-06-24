@@ -1,0 +1,37 @@
+
+
+
+/mpnd/geometry/singlepixel/dimensions 2 2 6 mm
+/mpnd/geometry/reload
+/gps/energy 0.025 eV
+/gps/particle neutron
+/gps/direction 0. 0. 1.
+/gps/pos/type Beam
+/gps/pos/shape Circle
+/gps/pos/sigma_r  1 mm 
+/gps/pos/centre 0. 0. -10. cm
+/mpnd/sd/select_sd scintillator_sd
+/mpnd/sd/particle/remove e-
+/run/beamOn 1
+
+/vis/enable
+/vis/viewer/flush
+
+/mpnd/geometry/singlepixel/dimensions 2 2 6 mm
+/mpnd/geometry/reload
+/gps/energy 5 eV
+/gps/particle opticalphoton
+/gps/direction 0. 0. 1.
+/gps/pos/type Beam
+/gps/pos/shape Circle
+/gps/pos/sigma_r  1 mm 
+/gps/pos/centre 0. 0. 0. cm
+/mpnd/sd/select_sd scintillator_sd
+/mpnd/sd/particle/remove e-
+/run/beamOn 1
+
+
+
+/vis/enable
+/vis/viewer/flush
+/run/beamOn 10

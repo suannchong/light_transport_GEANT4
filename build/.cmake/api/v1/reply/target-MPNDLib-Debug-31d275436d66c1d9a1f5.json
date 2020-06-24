@@ -1,0 +1,155 @@
+{
+	"artifacts" : 
+	[
+		{
+			"path" : "MPNDLib/libMPNDLib.dylib"
+		}
+	],
+	"backtrace" : 1,
+	"backtraceGraph" : 
+	{
+		"commands" : 
+		[
+			"add_library",
+			"include_directories",
+			"include"
+		],
+		"files" : 
+		[
+			"mpndlib/CMakeLists.txt",
+			"/Applications/root_v6.16.00/cmake/ROOTUseFile.cmake"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 46,
+				"parent" : 0
+			},
+			{
+				"command" : 2,
+				"file" : 0,
+				"line" : 31,
+				"parent" : 0
+			},
+			{
+				"file" : 1,
+				"parent" : 2
+			},
+			{
+				"command" : 1,
+				"file" : 1,
+				"line" : 7,
+				"parent" : 3
+			},
+			{
+				"command" : 1,
+				"file" : 0,
+				"line" : 37,
+				"parent" : 0
+			}
+		]
+	},
+	"compileGroups" : 
+	[
+		{
+			"compileCommandFragments" : 
+			[
+				{
+					"fragment" : "  -m64 -pipe -fsigned-char -fno-common -Qunused-arguments -pthread -std=c++11 -stdlib=libc++ -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX10.15.sdk -fPIC   -Wall -Wextra -Wpedantic -g -O2 -std=gnu++14"
+				}
+			],
+			"defines" : 
+			[
+				{
+					"define" : "MPNDLib_EXPORTS"
+				}
+			],
+			"includes" : 
+			[
+				{
+					"backtrace" : 4,
+					"path" : "/Applications/root_v6.16.00/include"
+				},
+				{
+					"backtrace" : 5,
+					"path" : "/Users/suannchong/Desktop/Geant4/mpnd_suann/mpndlib/include"
+				}
+			],
+			"language" : "CXX",
+			"sourceIndexes" : 
+			[
+				0,
+				1
+			]
+		}
+	],
+	"id" : "MPNDLib::@644516cb5738f77166b7",
+	"link" : 
+	{
+		"commandFragments" : 
+		[
+			{
+				"fragment" : "-L/Applications/root_v6.16.00/lib",
+				"role" : "libraryPath"
+			},
+			{
+				"fragment" : "-Wl,-rpath,/Applications/root_v6.16.00/lib /Applications/root_v6.16.00/lib/libCore.so /Applications/root_v6.16.00/lib/libImt.so /Applications/root_v6.16.00/lib/libRIO.so /Applications/root_v6.16.00/lib/libNet.so /Applications/root_v6.16.00/lib/libHist.so /Applications/root_v6.16.00/lib/libGraf.so /Applications/root_v6.16.00/lib/libGraf3d.so /Applications/root_v6.16.00/lib/libGpad.so /Applications/root_v6.16.00/lib/libROOTDataFrame.so /Applications/root_v6.16.00/lib/libTree.so /Applications/root_v6.16.00/lib/libTreePlayer.so /Applications/root_v6.16.00/lib/libRint.so /Applications/root_v6.16.00/lib/libPostscript.so /Applications/root_v6.16.00/lib/libMatrix.so /Applications/root_v6.16.00/lib/libPhysics.so /Applications/root_v6.16.00/lib/libMathCore.so /Applications/root_v6.16.00/lib/libThread.so /Applications/root_v6.16.00/lib/libMultiProc.so",
+				"role" : "libraries"
+			}
+		],
+		"language" : "CXX"
+	},
+	"name" : "MPNDLib",
+	"nameOnDisk" : "libMPNDLib.dylib",
+	"paths" : 
+	{
+		"build" : "MPNDLib",
+		"source" : "mpndlib"
+	},
+	"sourceGroups" : 
+	[
+		{
+			"name" : "Source Files",
+			"sourceIndexes" : 
+			[
+				0,
+				1
+			]
+		},
+		{
+			"name" : "CMake Rules",
+			"sourceIndexes" : 
+			[
+				2
+			]
+		}
+	],
+	"sources" : 
+	[
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "mpndlib/src/simhit.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"isGenerated" : true,
+			"path" : "build/MPNDLib/G__MPNDLib.cxx",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "build/MPNDLib/G__MPNDLib.cxx.rule",
+			"sourceGroupIndex" : 1
+		}
+	],
+	"type" : "SHARED_LIBRARY"
+}

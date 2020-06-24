@@ -1,0 +1,5 @@
+/control/alias ny -1.
+
+/gps/pos/center nx -1 -1 mm
+
+/control/loop examples/run_ny.mac ny -1. 1.0 0.5

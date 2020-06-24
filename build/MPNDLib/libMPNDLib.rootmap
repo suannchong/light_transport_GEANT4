@@ -1,0 +1,18 @@
+{ decls }
+namespace MPND { namespace Detectors {  } }
+namespace MPND { namespace Filters {  } }
+namespace MPND {  }
+
+[ libMPNDLib.dylib ]
+# List of selected classes
+class MPND::SimHit
+header simhit.hpp
+# List of selected namespaces
+namespace MPND
+namespace MPND::Detectors
+namespace MPND::Filters
+# List of selected vars
+var MPND::Detectors::NConfigs
+var MPND::Detectors::ConfigString
+var MPND::Filters::NTypes
+var MPND::Filters::TypeString

@@ -1,0 +1,526 @@
+{
+	"artifacts" : 
+	[
+		{
+			"path" : "sim"
+		}
+	],
+	"backtrace" : 1,
+	"backtraceGraph" : 
+	{
+		"commands" : 
+		[
+			"add_executable",
+			"target_link_libraries",
+			"include_directories",
+			"include",
+			"add_definitions",
+			"target_compile_definitions"
+		],
+		"files" : 
+		[
+			"CMakeLists.txt",
+			"/Applications/root_v6.16.00/cmake/ROOTUseFile.cmake",
+			"/Users/suannchong/Desktop/Geant4/geant4.10.05.p01-install/lib/Geant4-10.5.1/UseGeant4.cmake"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 42,
+				"parent" : 0
+			},
+			{
+				"command" : 1,
+				"file" : 0,
+				"line" : 44,
+				"parent" : 0
+			},
+			{
+				"command" : 3,
+				"file" : 0,
+				"line" : 32,
+				"parent" : 0
+			},
+			{
+				"file" : 1,
+				"parent" : 3
+			},
+			{
+				"command" : 2,
+				"file" : 1,
+				"line" : 7,
+				"parent" : 4
+			},
+			{
+				"command" : 2,
+				"file" : 0,
+				"line" : 37,
+				"parent" : 0
+			},
+			{
+				"command" : 2,
+				"file" : 0,
+				"line" : 38,
+				"parent" : 0
+			},
+			{
+				"command" : 3,
+				"file" : 0,
+				"line" : 27,
+				"parent" : 0
+			},
+			{
+				"file" : 2,
+				"parent" : 8
+			},
+			{
+				"command" : 2,
+				"file" : 2,
+				"line" : 37,
+				"parent" : 9
+			},
+			{
+				"command" : 1,
+				"file" : 0,
+				"line" : 43,
+				"parent" : 0
+			},
+			{
+				"command" : 4,
+				"file" : 2,
+				"line" : 36,
+				"parent" : 9
+			},
+			{
+				"command" : 5,
+				"file" : 0,
+				"line" : 46,
+				"parent" : 0
+			},
+			{
+				"command" : 5,
+				"file" : 0,
+				"line" : 52,
+				"parent" : 0
+			}
+		]
+	},
+	"compileGroups" : 
+	[
+		{
+			"compileCommandFragments" : 
+			[
+				{
+					"fragment" : "-W -Wall -pedantic -Wno-non-virtual-dtor -Wno-long-long -Wwrite-strings -Wpointer-arith -Woverloaded-virtual -Wno-variadic-macros -Wshadow -pipe -Qunused-arguments -DGL_SILENCE_DEPRECATION -stdlib=libc++ -DG4USE_STD11 -std=c++11  -m64 -pipe -fsigned-char -fno-common -Qunused-arguments -pthread -std=c++11 -stdlib=libc++ -g -DG4FPE_DEBUG -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX10.15.sdk   -Wall -Wextra -Wpedantic -g -O2 -F/Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/System/Library/Frameworks  -fPIC -std=c++14"
+				}
+			],
+			"defines" : 
+			[
+				{
+					"backtrace" : 12,
+					"define" : "G4INTY_USE_QT"
+				},
+				{
+					"backtrace" : 12,
+					"define" : "G4INTY_USE_XT"
+				},
+				{
+					"backtrace" : 11,
+					"define" : "G4LIB_BUILD_DLL"
+				},
+				{
+					"backtrace" : 12,
+					"define" : "G4UI_USE"
+				},
+				{
+					"backtrace" : 12,
+					"define" : "G4UI_USE_QT"
+				},
+				{
+					"backtrace" : 12,
+					"define" : "G4UI_USE_TCSH"
+				},
+				{
+					"backtrace" : 12,
+					"define" : "G4VERBOSE"
+				},
+				{
+					"backtrace" : 12,
+					"define" : "G4VIS_USE"
+				},
+				{
+					"backtrace" : 12,
+					"define" : "G4VIS_USE_OPENGL"
+				},
+				{
+					"backtrace" : 12,
+					"define" : "G4VIS_USE_OPENGLQT"
+				},
+				{
+					"backtrace" : 12,
+					"define" : "G4VIS_USE_OPENGLX"
+				},
+				{
+					"backtrace" : 12,
+					"define" : "G4_STORE_TRAJECTORY"
+				},
+				{
+					"backtrace" : 13,
+					"define" : "MPNDG4MT=1"
+				},
+				{
+					"backtrace" : 14,
+					"define" : "MPNDG4VIS=1"
+				},
+				{
+					"backtrace" : 11,
+					"define" : "QT_CORE_LIB"
+				},
+				{
+					"backtrace" : 11,
+					"define" : "QT_GUI_LIB"
+				},
+				{
+					"backtrace" : 11,
+					"define" : "QT_OPENGL_LIB"
+				},
+				{
+					"backtrace" : 11,
+					"define" : "QT_PRINTSUPPORT_LIB"
+				},
+				{
+					"backtrace" : 11,
+					"define" : "QT_WIDGETS_LIB"
+				}
+			],
+			"includes" : 
+			[
+				{
+					"backtrace" : 5,
+					"path" : "/Applications/root_v6.16.00/include"
+				},
+				{
+					"backtrace" : 6,
+					"path" : "/Users/suannchong/Desktop/Geant4/mpnd_suann/include"
+				},
+				{
+					"backtrace" : 7,
+					"path" : "/Users/suannchong/Desktop/Geant4/mpnd_suann/mpndlib/include"
+				},
+				{
+					"backtrace" : 10,
+					"isSystem" : true,
+					"path" : "/Users/suannchong/Desktop/Geant4/geant4.10.05.p01-install/include/Geant4"
+				},
+				{
+					"backtrace" : 11,
+					"isSystem" : true,
+					"path" : "/opt/anaconda3/include/qt"
+				},
+				{
+					"backtrace" : 11,
+					"isSystem" : true,
+					"path" : "/opt/anaconda3/include/qt/QtWidgets"
+				},
+				{
+					"backtrace" : 11,
+					"isSystem" : true,
+					"path" : "/opt/anaconda3/include/qt/QtGui"
+				},
+				{
+					"backtrace" : 11,
+					"isSystem" : true,
+					"path" : "/Library/Developer/CommandLineTools/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/OpenGL.framework/Headers"
+				},
+				{
+					"backtrace" : 11,
+					"isSystem" : true,
+					"path" : "/opt/anaconda3/include/qt/QtCore"
+				},
+				{
+					"backtrace" : 11,
+					"isSystem" : true,
+					"path" : "/opt/anaconda3/./mkspecs/macx-clang"
+				},
+				{
+					"backtrace" : 11,
+					"isSystem" : true,
+					"path" : "/opt/anaconda3/include/qt/QtPrintSupport"
+				},
+				{
+					"backtrace" : 11,
+					"isSystem" : true,
+					"path" : "/opt/anaconda3/include/qt/QtOpenGL"
+				}
+			],
+			"language" : "CXX",
+			"sourceIndexes" : 
+			[
+				0,
+				1,
+				2,
+				3,
+				4,
+				5,
+				6,
+				7,
+				8,
+				9,
+				10,
+				11,
+				12,
+				13,
+				14,
+				15,
+				16,
+				17,
+				18,
+				19,
+				20,
+				21,
+				22,
+				23,
+				24,
+				25
+			]
+		}
+	],
+	"dependencies" : 
+	[
+		{
+			"backtrace" : 2,
+			"id" : "MPNDLib::@644516cb5738f77166b7"
+		}
+	],
+	"id" : "sim::@6890427a1f51a3e7e1df",
+	"link" : 
+	{
+		"commandFragments" : 
+		[
+			{
+				"fragment" : "-W -Wall -pedantic -Wno-non-virtual-dtor -Wno-long-long -Wwrite-strings -Wpointer-arith -Woverloaded-virtual -Wno-variadic-macros -Wshadow -pipe -Qunused-arguments -DGL_SILENCE_DEPRECATION -stdlib=libc++ -DG4USE_STD11 -std=c++11  -m64 -pipe -fsigned-char -fno-common -Qunused-arguments -pthread -std=c++11 -stdlib=libc++ -g -DG4FPE_DEBUG",
+				"role" : "flags"
+			},
+			{
+				"fragment" : "-F/Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/System/Library/Frameworks",
+				"role" : "frameworkPath"
+			},
+			{
+				"fragment" : "-L/Applications/root_v6.16.00/lib",
+				"role" : "libraryPath"
+			},
+			{
+				"fragment" : "-Wl,-rpath,/Applications/root_v6.16.00/lib -Wl,-rpath,/Users/suannchong/Desktop/Geant4/geant4.10.05.p01-install/lib -Wl,-rpath,/Users/suannchong/Desktop/Geant4/mpnd_suann/build/MPNDLib -Wl,-rpath,/opt/anaconda3/lib /Users/suannchong/Desktop/Geant4/geant4.10.05.p01-install/lib/libG4Tree.dylib /Users/suannchong/Desktop/Geant4/geant4.10.05.p01-install/lib/libG4GMocren.dylib /Users/suannchong/Desktop/Geant4/geant4.10.05.p01-install/lib/libG4visHepRep.dylib /Users/suannchong/Desktop/Geant4/geant4.10.05.p01-install/lib/libG4RayTracer.dylib /Users/suannchong/Desktop/Geant4/geant4.10.05.p01-install/lib/libG4VRML.dylib /Users/suannchong/Desktop/Geant4/geant4.10.05.p01-install/lib/libG4OpenGL.dylib /Users/suannchong/Desktop/Geant4/geant4.10.05.p01-install/lib/libG4gl2ps.dylib /Users/suannchong/Desktop/Geant4/geant4.10.05.p01-install/lib/libG4interfaces.dylib /Users/suannchong/Desktop/Geant4/geant4.10.05.p01-install/lib/libG4persistency.dylib /Users/suannchong/Desktop/Geant4/geant4.10.05.p01-install/lib/libG4error_propagation.dylib /Users/suannchong/Desktop/Geant4/geant4.10.05.p01-install/lib/libG4readout.dylib /Users/suannchong/Desktop/Geant4/geant4.10.05.p01-install/lib/libG4physicslists.dylib /Users/suannchong/Desktop/Geant4/geant4.10.05.p01-install/lib/libG4parmodels.dylib MPNDLib/libMPNDLib.dylib /Users/suannchong/Desktop/Geant4/geant4.10.05.p01-install/lib/libG4FR.dylib /Users/suannchong/Desktop/Geant4/geant4.10.05.p01-install/lib/libG4vis_management.dylib /Users/suannchong/Desktop/Geant4/geant4.10.05.p01-install/lib/libG4modeling.dylib -framework OpenGL /usr/X11R6/lib/libGL.dylib /usr/X11R6/lib/libGLU.dylib /usr/X11R6/lib/libSM.dylib /usr/X11R6/lib/libICE.dylib /usr/X11R6/lib/libX11.dylib /usr/X11R6/lib/libXext.dylib /usr/X11R6/lib/libXmu.dylib /opt/anaconda3/lib/libQt5OpenGL.5.9.7.dylib /opt/anaconda3/lib/libQt5PrintSupport.5.9.7.dylib /opt/anaconda3/lib/libQt5Widgets.5.9.7.dylib /opt/anaconda3/lib/libQt5Gui.5.9.7.dylib /opt/anaconda3/lib/libQt5Core.5.9.7.dylib /Users/suannchong/Desktop/Geant4/geant4.10.05.p01-install/lib/libG4run.dylib /Users/suannchong/Desktop/Geant4/geant4.10.05.p01-install/lib/libG4event.dylib /Users/suannchong/Desktop/Geant4/geant4.10.05.p01-install/lib/libG4tracking.dylib /Users/suannchong/Desktop/Geant4/geant4.10.05.p01-install/lib/libG4processes.dylib /Users/suannchong/Desktop/Geant4/geant4.10.05.p01-install/lib/libG4analysis.dylib /usr/X11R6/lib/libfreetype.dylib /Users/suannchong/Desktop/Geant4/geant4.10.05.p01-install/lib/libG4zlib.dylib /usr/lib/libexpat.dylib /Users/suannchong/Desktop/Geant4/geant4.10.05.p01-install/lib/libG4digits_hits.dylib /Users/suannchong/Desktop/Geant4/geant4.10.05.p01-install/lib/libG4track.dylib /Users/suannchong/Desktop/Geant4/geant4.10.05.p01-install/lib/libG4particles.dylib /Users/suannchong/Desktop/Geant4/geant4.10.05.p01-install/lib/libG4geometry.dylib /Users/suannchong/Desktop/Geant4/geant4.10.05.p01-install/lib/libG4materials.dylib /Users/suannchong/Desktop/Geant4/geant4.10.05.p01-install/lib/libG4graphics_reps.dylib /Users/suannchong/Desktop/Geant4/geant4.10.05.p01-install/lib/libG4intercoms.dylib /Users/suannchong/Desktop/Geant4/geant4.10.05.p01-install/lib/libG4global.dylib /Users/suannchong/Desktop/Geant4/geant4.10.05.p01-install/lib/libG4clhep.dylib /Applications/root_v6.16.00/lib/libCore.so /Applications/root_v6.16.00/lib/libImt.so /Applications/root_v6.16.00/lib/libRIO.so /Applications/root_v6.16.00/lib/libNet.so /Applications/root_v6.16.00/lib/libHist.so /Applications/root_v6.16.00/lib/libGraf.so /Applications/root_v6.16.00/lib/libGraf3d.so /Applications/root_v6.16.00/lib/libGpad.so /Applications/root_v6.16.00/lib/libROOTDataFrame.so /Applications/root_v6.16.00/lib/libTree.so /Applications/root_v6.16.00/lib/libTreePlayer.so /Applications/root_v6.16.00/lib/libRint.so /Applications/root_v6.16.00/lib/libPostscript.so /Applications/root_v6.16.00/lib/libMatrix.so /Applications/root_v6.16.00/lib/libPhysics.so /Applications/root_v6.16.00/lib/libMathCore.so /Applications/root_v6.16.00/lib/libThread.so /Applications/root_v6.16.00/lib/libMultiProc.so",
+				"role" : "libraries"
+			}
+		],
+		"language" : "CXX"
+	},
+	"name" : "sim",
+	"nameOnDisk" : "sim",
+	"paths" : 
+	{
+		"build" : ".",
+		"source" : "."
+	},
+	"sourceGroups" : 
+	[
+		{
+			"name" : "Source Files",
+			"sourceIndexes" : 
+			[
+				0,
+				1,
+				2,
+				3,
+				4,
+				5,
+				6,
+				7,
+				8,
+				9,
+				10,
+				11,
+				12,
+				13,
+				14,
+				15,
+				16,
+				17,
+				18,
+				19,
+				20,
+				21,
+				22,
+				23,
+				24,
+				25
+			]
+		}
+	],
+	"sources" : 
+	[
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "src/actioninitialization.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "src/basevolume.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "src/detectorconstruction.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "src/energyfilter.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "src/eventaction.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "src/filemanager.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "src/generalmanager.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "src/geometrymessenger.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "src/hit.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "src/main.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "src/materialsmanager.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "src/messengermanager.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "src/particlefilter.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "src/physicslist.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "src/pixelarraydetector.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "src/primarygeneratoraction.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "src/randommanager.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "src/run.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "src/runaction.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "src/runmessenger.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "src/sdmessenger.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "src/sensitivedetector.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "src/singlepixeldetector.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "src/singleton.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "src/uicmdwithtwodoublesandunit.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "src/world.cpp",
+			"sourceGroupIndex" : 0
+		}
+	],
+	"type" : "EXECUTABLE"
+}

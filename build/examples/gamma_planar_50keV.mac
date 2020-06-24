@@ -1,0 +1,41 @@
+# Basic, default settings
+/control/verbose 2
+/control/saveHistory
+/run/verbose 2
+
+# Initialize the run manager
+/run/numberOfThreads 4
+/run/initialize
+
+# Visualization settings
+/control/execute vis.mac
+
+# Set up the geometry - at 16x16 PixelArray
+/mpnd/geometry/config pixelarray
+/mpnd/geometry/pixelarray/nx 16
+/mpnd/geometry/pixelarray/ny 16
+/mpnd/geometry/reload
+
+# Set up the gun
+/gps/particle gamma
+/gps/pos/type Plane
+/gps/pos/shape Square
+/gps/pos/centre 1 2 1 cm
+/gps/pos/halfx 2 cm
+/gps/pos/halfy 2 cm
+/gps/ang/type cos
+/gps/ene/type Lin
+/gps/ene/min 2 MeV
+/gps/ene/max 10 MeV
+/gps/ene/gradient 1
+/gps/ene/intercept 1
+
+# Set up tracking
+/mpnd/sd/select_sd pmt_sd
+/mpnd/sd/particle/remove opticalphoton
+
+# Set up output
+/mpnd/run/path gamma_planar_50keV.root
+
+# Run some particles
+/run/beamOn 1000

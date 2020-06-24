@@ -1,0 +1,9 @@
+# Set up the geometry - single pixel 
+/mpnd/geometry/singlepixel/dimensions 2 2 {thickness} mm
+/mpnd/geometry/reload
+
+# Set up output
+/mpnd/run/path results/singlepixel_thickness/dielectric-LUT/neutron_beam_25meV_{thickness}mm_LUT_groundair.root
+
+# Run some particles
+/run/beamOn 10000

@@ -1,0 +1,38 @@
+# Basic, default settings
+/control/verbose 2
+/control/saveHistory
+/control/alias nx -1.
+/control/alias ny -1.
+/control/alias nz -1.
+/run/verbose 2
+
+# Initialize the run manager
+/run/numberOfThreads 4
+/run/initialize
+
+# Set up the geometry - single pixel 
+/mpnd/geometry/config singlepixel
+/mpnd/geometry/singlepixel/dimensions 2 2 2 mm
+/mpnd/geometry/singlepixel/scint_mat gs20
+/mpnd/geometry/reload
+
+# Set up the gun
+/gps/energy 3.139 eV
+/gps/particle opticalphoton
+/gps/pos/type Point
+/gps/ang/type iso
+/gps/pos/center -1 -1 -1 mm
+
+# Set up tracking (add to keep track, remove to discard)
+# Scintillator_sd
+/mpnd/sd/select_sd scintillator_sd
+/mpnd/sd/particle/remove e-   #default: e- in whitelist 
+
+# PMT_sd
+/mpnd/sd/select_sd pmt_sd
+#/mpnd/sd/particle/remove opticalphoton
+
+# Loop over different positions of X, Y, Z/control/loop examples/run1.mac N 1 1000 1 
+/control/loop examples/run_nX.mac nx -1. 1.0 0.5
+
+

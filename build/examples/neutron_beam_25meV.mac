@@ -1,0 +1,66 @@
+# Basic, default settings
+/control/verbose 2
+/control/saveHistory
+/control/alias width 2
+/control/alias thickness 6
+/run/verbose 2
+
+# Initialize the run manager
+/run/numberOfThreads 4
+/run/initialize
+
+# Set up the geometry - an 8x8 PixelArray
+#/mpnd/geometry/config pixelarray
+#/mpnd/geometry/pixelarray/nx 8
+#/mpnd/geometry/pixelarray/ny 8
+#/mpnd/geometry/pixelarray/dimensions 2 2 2 mm
+#/mpnd/geometry/pixelarray/scint_mat gs20
+#/mpnd/geometry/reload
+
+# Set up the geometry - single pixel 
+/mpnd/geometry/config singlepixel
+/mpnd/geometry/singlepixel/dimensions {width} {width} {thickness} mm
+/mpnd/geometry/singlepixel/scint_mat gs20
+/mpnd/geometry/reload
+
+# Set up the gun
+/gps/energy 0.025 eV
+/gps/particle neutron
+/gps/direction 0. 0. 1.
+/gps/pos/type Beam
+/gps/pos/shape Circle
+/gps/pos/sigma_r  4 mm 
+/gps/pos/centre 0. 0. -10. cm
+
+# Set up tracking (add to keep track, remove to discard)
+# Scintillator_sd
+/mpnd/sd/select_sd scintillator_sd
+
+#/mpnd/sd/particle/add alpha
+#/mpnd/sd/particle/add triton
+#/mpnd/sd/particle/add deuteron #EJ200
+#/mpnd/sd/particle/add C13      #EJ200
+
+/mpnd/sd/particle/remove e-   #default: e- in whitelist 
+#/mpnd/sd/particle/remove alpha
+#/mpnd/sd/particle/remove triton
+#/mpnd/sd/particle/remove deuteron  #EJ200
+#/mpnd/sd/particle/remove C13       #EJ200
+
+# PMT_sd
+/mpnd/sd/select_sd pmt_sd
+#/mpnd/sd/particle/remove opticalphoton
+
+# Loop over different scintillator thicknesses
+#/control/loop examples/run.mac thickness 1.0 3.5 0.5
+
+# Set up output
+/mpnd/run/path ~/Document/results/singlepixel_thickness/neutron_beam_25meV_{thickness}mm_LUT_groundair.root
+
+# Run some particles
+/run/beamOn 10
+
+# Accumulate tracks
+#/vis/enable
+#/vis/viewer/flush
+
