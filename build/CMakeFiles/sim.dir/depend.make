@@ -3793,6 +3793,8 @@ CMakeFiles/sim.dir/src/singlepixeldetector.cpp.o: /Users/suannchong/Desktop/Gean
 CMakeFiles/sim.dir/src/singlepixeldetector.cpp.o: /Users/suannchong/Desktop/Geant4/geant4.10.05.p01-install/include/Geant4/G4Allocator.hh
 CMakeFiles/sim.dir/src/singlepixeldetector.cpp.o: /Users/suannchong/Desktop/Geant4/geant4.10.05.p01-install/include/Geant4/G4AllocatorPool.hh
 CMakeFiles/sim.dir/src/singlepixeldetector.cpp.o: /Users/suannchong/Desktop/Geant4/geant4.10.05.p01-install/include/Geant4/G4AutoLock.hh
+CMakeFiles/sim.dir/src/singlepixeldetector.cpp.o: /Users/suannchong/Desktop/Geant4/geant4.10.05.p01-install/include/Geant4/G4BooleanSolid.hh
+CMakeFiles/sim.dir/src/singlepixeldetector.cpp.o: /Users/suannchong/Desktop/Geant4/geant4.10.05.p01-install/include/Geant4/G4BooleanSolid.icc
 CMakeFiles/sim.dir/src/singlepixeldetector.cpp.o: /Users/suannchong/Desktop/Geant4/geant4.10.05.p01-install/include/Geant4/G4BoundingEnvelope.hh
 CMakeFiles/sim.dir/src/singlepixeldetector.cpp.o: /Users/suannchong/Desktop/Geant4/geant4.10.05.p01-install/include/Geant4/G4Box.hh
 CMakeFiles/sim.dir/src/singlepixeldetector.cpp.o: /Users/suannchong/Desktop/Geant4/geant4.10.05.p01-install/include/Geant4/G4Box.icc
@@ -3801,6 +3803,7 @@ CMakeFiles/sim.dir/src/singlepixeldetector.cpp.o: /Users/suannchong/Desktop/Gean
 CMakeFiles/sim.dir/src/singlepixeldetector.cpp.o: /Users/suannchong/Desktop/Geant4/geant4.10.05.p01-install/include/Geant4/G4Colour.hh
 CMakeFiles/sim.dir/src/singlepixeldetector.cpp.o: /Users/suannchong/Desktop/Geant4/geant4.10.05.p01-install/include/Geant4/G4DataVector.hh
 CMakeFiles/sim.dir/src/singlepixeldetector.cpp.o: /Users/suannchong/Desktop/Geant4/geant4.10.05.p01-install/include/Geant4/G4DataVector.icc
+CMakeFiles/sim.dir/src/singlepixeldetector.cpp.o: /Users/suannchong/Desktop/Geant4/geant4.10.05.p01-install/include/Geant4/G4DisplacedSolid.hh
 CMakeFiles/sim.dir/src/singlepixeldetector.cpp.o: /Users/suannchong/Desktop/Geant4/geant4.10.05.p01-install/include/Geant4/G4Element.hh
 CMakeFiles/sim.dir/src/singlepixeldetector.cpp.o: /Users/suannchong/Desktop/Geant4/geant4.10.05.p01-install/include/Geant4/G4ElementTable.hh
 CMakeFiles/sim.dir/src/singlepixeldetector.cpp.o: /Users/suannchong/Desktop/Geant4/geant4.10.05.p01-install/include/Geant4/G4ElementVector.hh
@@ -3854,6 +3857,7 @@ CMakeFiles/sim.dir/src/singlepixeldetector.cpp.o: /Users/suannchong/Desktop/Gean
 CMakeFiles/sim.dir/src/singlepixeldetector.cpp.o: /Users/suannchong/Desktop/Geant4/geant4.10.05.p01-install/include/Geant4/G4SandiaTable.hh
 CMakeFiles/sim.dir/src/singlepixeldetector.cpp.o: /Users/suannchong/Desktop/Geant4/geant4.10.05.p01-install/include/Geant4/G4String.hh
 CMakeFiles/sim.dir/src/singlepixeldetector.cpp.o: /Users/suannchong/Desktop/Geant4/geant4.10.05.p01-install/include/Geant4/G4String.icc
+CMakeFiles/sim.dir/src/singlepixeldetector.cpp.o: /Users/suannchong/Desktop/Geant4/geant4.10.05.p01-install/include/Geant4/G4SubtractionSolid.hh
 CMakeFiles/sim.dir/src/singlepixeldetector.cpp.o: /Users/suannchong/Desktop/Geant4/geant4.10.05.p01-install/include/Geant4/G4SurfaceProperty.hh
 CMakeFiles/sim.dir/src/singlepixeldetector.cpp.o: /Users/suannchong/Desktop/Geant4/geant4.10.05.p01-install/include/Geant4/G4Threading.hh
 CMakeFiles/sim.dir/src/singlepixeldetector.cpp.o: /Users/suannchong/Desktop/Geant4/geant4.10.05.p01-install/include/Geant4/G4ThreeVector.hh

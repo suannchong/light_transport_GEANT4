@@ -1,5 +1,3 @@
-/control/alias nz -1.
 
-/gps/pos/center nx ny -1 mm
 
-/control/loop examples/run_nz.mac nz -1. 1.0 0.5
+/control/loop examples/run_nz.mac nz -0.75 0.75 0.25

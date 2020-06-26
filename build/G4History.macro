@@ -1,22 +1,1105 @@
-/control/alias width 2
-/control/alias thickness 6
+/control/alias nx -0.75
+/control/alias ny -0.75
+/control/alias nz -0.75
 /run/verbose 2
 /run/numberOfThreads 4
 /run/initialize
 /mpnd/geometry/config singlepixel
-/mpnd/geometry/singlepixel/dimensions 2 2 6 mm
+/mpnd/geometry/singlepixel/dimensions 2 2 2 mm
 /mpnd/geometry/singlepixel/scint_mat gs20
 /mpnd/geometry/reload
 /run/reinitializeGeometry
-/gps/energy 0.025 eV
-/gps/particle neutron
-/gps/direction 0. 0. 1.
-/gps/pos/type Beam
-/gps/pos/shape Circle
-/gps/pos/sigma_r 4 mm
-/gps/pos/centre 0. 0. -10. cm
+/gps/energy 3.139 eV
+/gps/particle opticalphoton
+/gps/pos/type Point
+/gps/ang/type iso
+/gps/position nx ny nz mm
 /mpnd/sd/select_sd scintillator_sd
 /mpnd/sd/particle/remove e-
 /mpnd/sd/select_sd pmt_sd
-/mpnd/run/path ~/Document/results/singlepixel_thickness/neutron_beam_25meV_6mm_LUT_groundair.root
-/run/beamOn 10
+/control/loop examples/run_nX.mac nx -0.75 0.75 0.25
+/control/loop examples/run_ny.mac ny -0.75 0.75 0.25
+/control/loop examples/run_nz.mac nz -0.75 0.75 0.25
+/gps/position nx ny nz mm
+/mpnd/run/path results/opticalphoton_3eV_-0.75_-0.75_-0.75_LUT_groundair.root
+/run/beamOn 10000
+/gps/position nx ny nz mm
+/mpnd/run/path results/opticalphoton_3eV_-0.75_-0.75_-0.5_LUT_groundair.root
+/run/beamOn 10000
+/gps/position nx ny nz mm
+/mpnd/run/path results/opticalphoton_3eV_-0.75_-0.75_-0.25_LUT_groundair.root
+/run/beamOn 10000
+/gps/position nx ny nz mm
+/mpnd/run/path results/opticalphoton_3eV_-0.75_-0.75_0_LUT_groundair.root
+/run/beamOn 10000
+/gps/position nx ny nz mm
+/mpnd/run/path results/opticalphoton_3eV_-0.75_-0.75_0.25_LUT_groundair.root
+/run/beamOn 10000
+/gps/position nx ny nz mm
+/mpnd/run/path results/opticalphoton_3eV_-0.75_-0.75_0.5_LUT_groundair.root
+/run/beamOn 10000
+/gps/position nx ny nz mm
+/mpnd/run/path results/opticalphoton_3eV_-0.75_-0.75_0.75_LUT_groundair.root
+/run/beamOn 10000
+/control/loop examples/run_nz.mac nz -0.75 0.75 0.25
+/gps/position nx ny nz mm
+/mpnd/run/path results/opticalphoton_3eV_-0.75_-0.5_-0.75_LUT_groundair.root
+/run/beamOn 10000
+/gps/position nx ny nz mm
+/mpnd/run/path results/opticalphoton_3eV_-0.75_-0.5_-0.5_LUT_groundair.root
+/run/beamOn 10000
+/gps/position nx ny nz mm
+/mpnd/run/path results/opticalphoton_3eV_-0.75_-0.5_-0.25_LUT_groundair.root
+/run/beamOn 10000
+/gps/position nx ny nz mm
+/mpnd/run/path results/opticalphoton_3eV_-0.75_-0.5_0_LUT_groundair.root
+/run/beamOn 10000
+/gps/position nx ny nz mm
+/mpnd/run/path results/opticalphoton_3eV_-0.75_-0.5_0.25_LUT_groundair.root
+/run/beamOn 10000
+/gps/position nx ny nz mm
+/mpnd/run/path results/opticalphoton_3eV_-0.75_-0.5_0.5_LUT_groundair.root
+/run/beamOn 10000
+/gps/position nx ny nz mm
+/mpnd/run/path results/opticalphoton_3eV_-0.75_-0.5_0.75_LUT_groundair.root
+/run/beamOn 10000
+/control/loop examples/run_nz.mac nz -0.75 0.75 0.25
+/gps/position nx ny nz mm
+/mpnd/run/path results/opticalphoton_3eV_-0.75_-0.25_-0.75_LUT_groundair.root
+/run/beamOn 10000
+/gps/position nx ny nz mm
+/mpnd/run/path results/opticalphoton_3eV_-0.75_-0.25_-0.5_LUT_groundair.root
+/run/beamOn 10000
+/gps/position nx ny nz mm
+/mpnd/run/path results/opticalphoton_3eV_-0.75_-0.25_-0.25_LUT_groundair.root
+/run/beamOn 10000
+/gps/position nx ny nz mm
+/mpnd/run/path results/opticalphoton_3eV_-0.75_-0.25_0_LUT_groundair.root
+/run/beamOn 10000
+/gps/position nx ny nz mm
+/mpnd/run/path results/opticalphoton_3eV_-0.75_-0.25_0.25_LUT_groundair.root
+/run/beamOn 10000
+/gps/position nx ny nz mm
+/mpnd/run/path results/opticalphoton_3eV_-0.75_-0.25_0.5_LUT_groundair.root
+/run/beamOn 10000
+/gps/position nx ny nz mm
+/mpnd/run/path results/opticalphoton_3eV_-0.75_-0.25_0.75_LUT_groundair.root
+/run/beamOn 10000
+/control/loop examples/run_nz.mac nz -0.75 0.75 0.25
+/gps/position nx ny nz mm
+/mpnd/run/path results/opticalphoton_3eV_-0.75_0_-0.75_LUT_groundair.root
+/run/beamOn 10000
+/gps/position nx ny nz mm
+/mpnd/run/path results/opticalphoton_3eV_-0.75_0_-0.5_LUT_groundair.root
+/run/beamOn 10000
+/gps/position nx ny nz mm
+/mpnd/run/path results/opticalphoton_3eV_-0.75_0_-0.25_LUT_groundair.root
+/run/beamOn 10000
+/gps/position nx ny nz mm
+/mpnd/run/path results/opticalphoton_3eV_-0.75_0_0_LUT_groundair.root
+/run/beamOn 10000
+/gps/position nx ny nz mm
+/mpnd/run/path results/opticalphoton_3eV_-0.75_0_0.25_LUT_groundair.root
+/run/beamOn 10000
+/gps/position nx ny nz mm
+/mpnd/run/path results/opticalphoton_3eV_-0.75_0_0.5_LUT_groundair.root
+/run/beamOn 10000
+/gps/position nx ny nz mm
+/mpnd/run/path results/opticalphoton_3eV_-0.75_0_0.75_LUT_groundair.root
+/run/beamOn 10000
+/control/loop examples/run_nz.mac nz -0.75 0.75 0.25
+/gps/position nx ny nz mm
+/mpnd/run/path results/opticalphoton_3eV_-0.75_0.25_-0.75_LUT_groundair.root
+/run/beamOn 10000
+/gps/position nx ny nz mm
+/mpnd/run/path results/opticalphoton_3eV_-0.75_0.25_-0.5_LUT_groundair.root
+/run/beamOn 10000
+/gps/position nx ny nz mm
+/mpnd/run/path results/opticalphoton_3eV_-0.75_0.25_-0.25_LUT_groundair.root
+/run/beamOn 10000
+/gps/position nx ny nz mm
+/mpnd/run/path results/opticalphoton_3eV_-0.75_0.25_0_LUT_groundair.root
+/run/beamOn 10000
+/gps/position nx ny nz mm
+/mpnd/run/path results/opticalphoton_3eV_-0.75_0.25_0.25_LUT_groundair.root
+/run/beamOn 10000
+/gps/position nx ny nz mm
+/mpnd/run/path results/opticalphoton_3eV_-0.75_0.25_0.5_LUT_groundair.root
+/run/beamOn 10000
+/gps/position nx ny nz mm
+/mpnd/run/path results/opticalphoton_3eV_-0.75_0.25_0.75_LUT_groundair.root
+/run/beamOn 10000
+/control/loop examples/run_nz.mac nz -0.75 0.75 0.25
+/gps/position nx ny nz mm
+/mpnd/run/path results/opticalphoton_3eV_-0.75_0.5_-0.75_LUT_groundair.root
+/run/beamOn 10000
+/gps/position nx ny nz mm
+/mpnd/run/path results/opticalphoton_3eV_-0.75_0.5_-0.5_LUT_groundair.root
+/run/beamOn 10000
+/gps/position nx ny nz mm
+/mpnd/run/path results/opticalphoton_3eV_-0.75_0.5_-0.25_LUT_groundair.root
+/run/beamOn 10000
+/gps/position nx ny nz mm
+/mpnd/run/path results/opticalphoton_3eV_-0.75_0.5_0_LUT_groundair.root
+/run/beamOn 10000
+/gps/position nx ny nz mm
+/mpnd/run/path results/opticalphoton_3eV_-0.75_0.5_0.25_LUT_groundair.root
+/run/beamOn 10000
+/gps/position nx ny nz mm
+/mpnd/run/path results/opticalphoton_3eV_-0.75_0.5_0.5_LUT_groundair.root
+/run/beamOn 10000
+/gps/position nx ny nz mm
+/mpnd/run/path results/opticalphoton_3eV_-0.75_0.5_0.75_LUT_groundair.root
+/run/beamOn 10000
+/control/loop examples/run_nz.mac nz -0.75 0.75 0.25
+/gps/position nx ny nz mm
+/mpnd/run/path results/opticalphoton_3eV_-0.75_0.75_-0.75_LUT_groundair.root
+/run/beamOn 10000
+/gps/position nx ny nz mm
+/mpnd/run/path results/opticalphoton_3eV_-0.75_0.75_-0.5_LUT_groundair.root
+/run/beamOn 10000
+/gps/position nx ny nz mm
+/mpnd/run/path results/opticalphoton_3eV_-0.75_0.75_-0.25_LUT_groundair.root
+/run/beamOn 10000
+/gps/position nx ny nz mm
+/mpnd/run/path results/opticalphoton_3eV_-0.75_0.75_0_LUT_groundair.root
+/run/beamOn 10000
+/gps/position nx ny nz mm
+/mpnd/run/path results/opticalphoton_3eV_-0.75_0.75_0.25_LUT_groundair.root
+/run/beamOn 10000
+/gps/position nx ny nz mm
+/mpnd/run/path results/opticalphoton_3eV_-0.75_0.75_0.5_LUT_groundair.root
+/run/beamOn 10000
+/gps/position nx ny nz mm
+/mpnd/run/path results/opticalphoton_3eV_-0.75_0.75_0.75_LUT_groundair.root
+/run/beamOn 10000
+/control/loop examples/run_ny.mac ny -0.75 0.75 0.25
+/control/loop examples/run_nz.mac nz -0.75 0.75 0.25
+/gps/position nx ny nz mm
+/mpnd/run/path results/opticalphoton_3eV_-0.5_-0.75_-0.75_LUT_groundair.root
+/run/beamOn 10000
+/gps/position nx ny nz mm
+/mpnd/run/path results/opticalphoton_3eV_-0.5_-0.75_-0.5_LUT_groundair.root
+/run/beamOn 10000
+/gps/position nx ny nz mm
+/mpnd/run/path results/opticalphoton_3eV_-0.5_-0.75_-0.25_LUT_groundair.root
+/run/beamOn 10000
+/gps/position nx ny nz mm
+/mpnd/run/path results/opticalphoton_3eV_-0.5_-0.75_0_LUT_groundair.root
+/run/beamOn 10000
+/gps/position nx ny nz mm
+/mpnd/run/path results/opticalphoton_3eV_-0.5_-0.75_0.25_LUT_groundair.root
+/run/beamOn 10000
+/gps/position nx ny nz mm
+/mpnd/run/path results/opticalphoton_3eV_-0.5_-0.75_0.5_LUT_groundair.root
+/run/beamOn 10000
+/gps/position nx ny nz mm
+/mpnd/run/path results/opticalphoton_3eV_-0.5_-0.75_0.75_LUT_groundair.root
+/run/beamOn 10000
+/control/loop examples/run_nz.mac nz -0.75 0.75 0.25
+/gps/position nx ny nz mm
+/mpnd/run/path results/opticalphoton_3eV_-0.5_-0.5_-0.75_LUT_groundair.root
+/run/beamOn 10000
+/gps/position nx ny nz mm
+/mpnd/run/path results/opticalphoton_3eV_-0.5_-0.5_-0.5_LUT_groundair.root
+/run/beamOn 10000
+/gps/position nx ny nz mm
+/mpnd/run/path results/opticalphoton_3eV_-0.5_-0.5_-0.25_LUT_groundair.root
+/run/beamOn 10000
+/gps/position nx ny nz mm
+/mpnd/run/path results/opticalphoton_3eV_-0.5_-0.5_0_LUT_groundair.root
+/run/beamOn 10000
+/gps/position nx ny nz mm
+/mpnd/run/path results/opticalphoton_3eV_-0.5_-0.5_0.25_LUT_groundair.root
+/run/beamOn 10000
+/gps/position nx ny nz mm
+/mpnd/run/path results/opticalphoton_3eV_-0.5_-0.5_0.5_LUT_groundair.root
+/run/beamOn 10000
+/gps/position nx ny nz mm
+/mpnd/run/path results/opticalphoton_3eV_-0.5_-0.5_0.75_LUT_groundair.root
+/run/beamOn 10000
+/control/loop examples/run_nz.mac nz -0.75 0.75 0.25
+/gps/position nx ny nz mm
+/mpnd/run/path results/opticalphoton_3eV_-0.5_-0.25_-0.75_LUT_groundair.root
+/run/beamOn 10000
+/gps/position nx ny nz mm
+/mpnd/run/path results/opticalphoton_3eV_-0.5_-0.25_-0.5_LUT_groundair.root
+/run/beamOn 10000
+/gps/position nx ny nz mm
+/mpnd/run/path results/opticalphoton_3eV_-0.5_-0.25_-0.25_LUT_groundair.root
+/run/beamOn 10000
+/gps/position nx ny nz mm
+/mpnd/run/path results/opticalphoton_3eV_-0.5_-0.25_0_LUT_groundair.root
+/run/beamOn 10000
+/gps/position nx ny nz mm
+/mpnd/run/path results/opticalphoton_3eV_-0.5_-0.25_0.25_LUT_groundair.root
+/run/beamOn 10000
+/gps/position nx ny nz mm
+/mpnd/run/path results/opticalphoton_3eV_-0.5_-0.25_0.5_LUT_groundair.root
+/run/beamOn 10000
+/gps/position nx ny nz mm
+/mpnd/run/path results/opticalphoton_3eV_-0.5_-0.25_0.75_LUT_groundair.root
+/run/beamOn 10000
+/control/loop examples/run_nz.mac nz -0.75 0.75 0.25
+/gps/position nx ny nz mm
+/mpnd/run/path results/opticalphoton_3eV_-0.5_0_-0.75_LUT_groundair.root
+/run/beamOn 10000
+/gps/position nx ny nz mm
+/mpnd/run/path results/opticalphoton_3eV_-0.5_0_-0.5_LUT_groundair.root
+/run/beamOn 10000
+/gps/position nx ny nz mm
+/mpnd/run/path results/opticalphoton_3eV_-0.5_0_-0.25_LUT_groundair.root
+/run/beamOn 10000
+/gps/position nx ny nz mm
+/mpnd/run/path results/opticalphoton_3eV_-0.5_0_0_LUT_groundair.root
+/run/beamOn 10000
+/gps/position nx ny nz mm
+/mpnd/run/path results/opticalphoton_3eV_-0.5_0_0.25_LUT_groundair.root
+/run/beamOn 10000
+/gps/position nx ny nz mm
+/mpnd/run/path results/opticalphoton_3eV_-0.5_0_0.5_LUT_groundair.root
+/run/beamOn 10000
+/gps/position nx ny nz mm
+/mpnd/run/path results/opticalphoton_3eV_-0.5_0_0.75_LUT_groundair.root
+/run/beamOn 10000
+/control/loop examples/run_nz.mac nz -0.75 0.75 0.25
+/gps/position nx ny nz mm
+/mpnd/run/path results/opticalphoton_3eV_-0.5_0.25_-0.75_LUT_groundair.root
+/run/beamOn 10000
+/gps/position nx ny nz mm
+/mpnd/run/path results/opticalphoton_3eV_-0.5_0.25_-0.5_LUT_groundair.root
+/run/beamOn 10000
+/gps/position nx ny nz mm
+/mpnd/run/path results/opticalphoton_3eV_-0.5_0.25_-0.25_LUT_groundair.root
+/run/beamOn 10000
+/gps/position nx ny nz mm
+/mpnd/run/path results/opticalphoton_3eV_-0.5_0.25_0_LUT_groundair.root
+/run/beamOn 10000
+/gps/position nx ny nz mm
+/mpnd/run/path results/opticalphoton_3eV_-0.5_0.25_0.25_LUT_groundair.root
+/run/beamOn 10000
+/gps/position nx ny nz mm
+/mpnd/run/path results/opticalphoton_3eV_-0.5_0.25_0.5_LUT_groundair.root
+/run/beamOn 10000
+/gps/position nx ny nz mm
+/mpnd/run/path results/opticalphoton_3eV_-0.5_0.25_0.75_LUT_groundair.root
+/run/beamOn 10000
+/control/loop examples/run_nz.mac nz -0.75 0.75 0.25
+/gps/position nx ny nz mm
+/mpnd/run/path results/opticalphoton_3eV_-0.5_0.5_-0.75_LUT_groundair.root
+/run/beamOn 10000
+/gps/position nx ny nz mm
+/mpnd/run/path results/opticalphoton_3eV_-0.5_0.5_-0.5_LUT_groundair.root
+/run/beamOn 10000
+/gps/position nx ny nz mm
+/mpnd/run/path results/opticalphoton_3eV_-0.5_0.5_-0.25_LUT_groundair.root
+/run/beamOn 10000
+/gps/position nx ny nz mm
+/mpnd/run/path results/opticalphoton_3eV_-0.5_0.5_0_LUT_groundair.root
+/run/beamOn 10000
+/gps/position nx ny nz mm
+/mpnd/run/path results/opticalphoton_3eV_-0.5_0.5_0.25_LUT_groundair.root
+/run/beamOn 10000
+/gps/position nx ny nz mm
+/mpnd/run/path results/opticalphoton_3eV_-0.5_0.5_0.5_LUT_groundair.root
+/run/beamOn 10000
+/gps/position nx ny nz mm
+/mpnd/run/path results/opticalphoton_3eV_-0.5_0.5_0.75_LUT_groundair.root
+/run/beamOn 10000
+/control/loop examples/run_nz.mac nz -0.75 0.75 0.25
+/gps/position nx ny nz mm
+/mpnd/run/path results/opticalphoton_3eV_-0.5_0.75_-0.75_LUT_groundair.root
+/run/beamOn 10000
+/gps/position nx ny nz mm
+/mpnd/run/path results/opticalphoton_3eV_-0.5_0.75_-0.5_LUT_groundair.root
+/run/beamOn 10000
+/gps/position nx ny nz mm
+/mpnd/run/path results/opticalphoton_3eV_-0.5_0.75_-0.25_LUT_groundair.root
+/run/beamOn 10000
+/gps/position nx ny nz mm
+/mpnd/run/path results/opticalphoton_3eV_-0.5_0.75_0_LUT_groundair.root
+/run/beamOn 10000
+/gps/position nx ny nz mm
+/mpnd/run/path results/opticalphoton_3eV_-0.5_0.75_0.25_LUT_groundair.root
+/run/beamOn 10000
+/gps/position nx ny nz mm
+/mpnd/run/path results/opticalphoton_3eV_-0.5_0.75_0.5_LUT_groundair.root
+/run/beamOn 10000
+/gps/position nx ny nz mm
+/mpnd/run/path results/opticalphoton_3eV_-0.5_0.75_0.75_LUT_groundair.root
+/run/beamOn 10000
+/control/loop examples/run_ny.mac ny -0.75 0.75 0.25
+/control/loop examples/run_nz.mac nz -0.75 0.75 0.25
+/gps/position nx ny nz mm
+/mpnd/run/path results/opticalphoton_3eV_-0.25_-0.75_-0.75_LUT_groundair.root
+/run/beamOn 10000
+/gps/position nx ny nz mm
+/mpnd/run/path results/opticalphoton_3eV_-0.25_-0.75_-0.5_LUT_groundair.root
+/run/beamOn 10000
+/gps/position nx ny nz mm
+/mpnd/run/path results/opticalphoton_3eV_-0.25_-0.75_-0.25_LUT_groundair.root
+/run/beamOn 10000
+/gps/position nx ny nz mm
+/mpnd/run/path results/opticalphoton_3eV_-0.25_-0.75_0_LUT_groundair.root
+/run/beamOn 10000
+/gps/position nx ny nz mm
+/mpnd/run/path results/opticalphoton_3eV_-0.25_-0.75_0.25_LUT_groundair.root
+/run/beamOn 10000
+/gps/position nx ny nz mm
+/mpnd/run/path results/opticalphoton_3eV_-0.25_-0.75_0.5_LUT_groundair.root
+/run/beamOn 10000
+/gps/position nx ny nz mm
+/mpnd/run/path results/opticalphoton_3eV_-0.25_-0.75_0.75_LUT_groundair.root
+/run/beamOn 10000
+/control/loop examples/run_nz.mac nz -0.75 0.75 0.25
+/gps/position nx ny nz mm
+/mpnd/run/path results/opticalphoton_3eV_-0.25_-0.5_-0.75_LUT_groundair.root
+/run/beamOn 10000
+/gps/position nx ny nz mm
+/mpnd/run/path results/opticalphoton_3eV_-0.25_-0.5_-0.5_LUT_groundair.root
+/run/beamOn 10000
+/gps/position nx ny nz mm
+/mpnd/run/path results/opticalphoton_3eV_-0.25_-0.5_-0.25_LUT_groundair.root
+/run/beamOn 10000
+/gps/position nx ny nz mm
+/mpnd/run/path results/opticalphoton_3eV_-0.25_-0.5_0_LUT_groundair.root
+/run/beamOn 10000
+/gps/position nx ny nz mm
+/mpnd/run/path results/opticalphoton_3eV_-0.25_-0.5_0.25_LUT_groundair.root
+/run/beamOn 10000
+/gps/position nx ny nz mm
+/mpnd/run/path results/opticalphoton_3eV_-0.25_-0.5_0.5_LUT_groundair.root
+/run/beamOn 10000
+/gps/position nx ny nz mm
+/mpnd/run/path results/opticalphoton_3eV_-0.25_-0.5_0.75_LUT_groundair.root
+/run/beamOn 10000
+/control/loop examples/run_nz.mac nz -0.75 0.75 0.25
+/gps/position nx ny nz mm
+/mpnd/run/path results/opticalphoton_3eV_-0.25_-0.25_-0.75_LUT_groundair.root
+/run/beamOn 10000
+/gps/position nx ny nz mm
+/mpnd/run/path results/opticalphoton_3eV_-0.25_-0.25_-0.5_LUT_groundair.root
+/run/beamOn 10000
+/gps/position nx ny nz mm
+/mpnd/run/path results/opticalphoton_3eV_-0.25_-0.25_-0.25_LUT_groundair.root
+/run/beamOn 10000
+/gps/position nx ny nz mm
+/mpnd/run/path results/opticalphoton_3eV_-0.25_-0.25_0_LUT_groundair.root
+/run/beamOn 10000
+/gps/position nx ny nz mm
+/mpnd/run/path results/opticalphoton_3eV_-0.25_-0.25_0.25_LUT_groundair.root
+/run/beamOn 10000
+/gps/position nx ny nz mm
+/mpnd/run/path results/opticalphoton_3eV_-0.25_-0.25_0.5_LUT_groundair.root
+/run/beamOn 10000
+/gps/position nx ny nz mm
+/mpnd/run/path results/opticalphoton_3eV_-0.25_-0.25_0.75_LUT_groundair.root
+/run/beamOn 10000
+/control/loop examples/run_nz.mac nz -0.75 0.75 0.25
+/gps/position nx ny nz mm
+/mpnd/run/path results/opticalphoton_3eV_-0.25_0_-0.75_LUT_groundair.root
+/run/beamOn 10000
+/gps/position nx ny nz mm
+/mpnd/run/path results/opticalphoton_3eV_-0.25_0_-0.5_LUT_groundair.root
+/run/beamOn 10000
+/gps/position nx ny nz mm
+/mpnd/run/path results/opticalphoton_3eV_-0.25_0_-0.25_LUT_groundair.root
+/run/beamOn 10000
+/gps/position nx ny nz mm
+/mpnd/run/path results/opticalphoton_3eV_-0.25_0_0_LUT_groundair.root
+/run/beamOn 10000
+/gps/position nx ny nz mm
+/mpnd/run/path results/opticalphoton_3eV_-0.25_0_0.25_LUT_groundair.root
+/run/beamOn 10000
+/gps/position nx ny nz mm
+/mpnd/run/path results/opticalphoton_3eV_-0.25_0_0.5_LUT_groundair.root
+/run/beamOn 10000
+/gps/position nx ny nz mm
+/mpnd/run/path results/opticalphoton_3eV_-0.25_0_0.75_LUT_groundair.root
+/run/beamOn 10000
+/control/loop examples/run_nz.mac nz -0.75 0.75 0.25
+/gps/position nx ny nz mm
+/mpnd/run/path results/opticalphoton_3eV_-0.25_0.25_-0.75_LUT_groundair.root
+/run/beamOn 10000
+/gps/position nx ny nz mm
+/mpnd/run/path results/opticalphoton_3eV_-0.25_0.25_-0.5_LUT_groundair.root
+/run/beamOn 10000
+/gps/position nx ny nz mm
+/mpnd/run/path results/opticalphoton_3eV_-0.25_0.25_-0.25_LUT_groundair.root
+/run/beamOn 10000
+/gps/position nx ny nz mm
+/mpnd/run/path results/opticalphoton_3eV_-0.25_0.25_0_LUT_groundair.root
+/run/beamOn 10000
+/gps/position nx ny nz mm
+/mpnd/run/path results/opticalphoton_3eV_-0.25_0.25_0.25_LUT_groundair.root
+/run/beamOn 10000
+/gps/position nx ny nz mm
+/mpnd/run/path results/opticalphoton_3eV_-0.25_0.25_0.5_LUT_groundair.root
+/run/beamOn 10000
+/gps/position nx ny nz mm
+/mpnd/run/path results/opticalphoton_3eV_-0.25_0.25_0.75_LUT_groundair.root
+/run/beamOn 10000
+/control/loop examples/run_nz.mac nz -0.75 0.75 0.25
+/gps/position nx ny nz mm
+/mpnd/run/path results/opticalphoton_3eV_-0.25_0.5_-0.75_LUT_groundair.root
+/run/beamOn 10000
+/gps/position nx ny nz mm
+/mpnd/run/path results/opticalphoton_3eV_-0.25_0.5_-0.5_LUT_groundair.root
+/run/beamOn 10000
+/gps/position nx ny nz mm
+/mpnd/run/path results/opticalphoton_3eV_-0.25_0.5_-0.25_LUT_groundair.root
+/run/beamOn 10000
+/gps/position nx ny nz mm
+/mpnd/run/path results/opticalphoton_3eV_-0.25_0.5_0_LUT_groundair.root
+/run/beamOn 10000
+/gps/position nx ny nz mm
+/mpnd/run/path results/opticalphoton_3eV_-0.25_0.5_0.25_LUT_groundair.root
+/run/beamOn 10000
+/gps/position nx ny nz mm
+/mpnd/run/path results/opticalphoton_3eV_-0.25_0.5_0.5_LUT_groundair.root
+/run/beamOn 10000
+/gps/position nx ny nz mm
+/mpnd/run/path results/opticalphoton_3eV_-0.25_0.5_0.75_LUT_groundair.root
+/run/beamOn 10000
+/control/loop examples/run_nz.mac nz -0.75 0.75 0.25
+/gps/position nx ny nz mm
+/mpnd/run/path results/opticalphoton_3eV_-0.25_0.75_-0.75_LUT_groundair.root
+/run/beamOn 10000
+/gps/position nx ny nz mm
+/mpnd/run/path results/opticalphoton_3eV_-0.25_0.75_-0.5_LUT_groundair.root
+/run/beamOn 10000
+/gps/position nx ny nz mm
+/mpnd/run/path results/opticalphoton_3eV_-0.25_0.75_-0.25_LUT_groundair.root
+/run/beamOn 10000
+/gps/position nx ny nz mm
+/mpnd/run/path results/opticalphoton_3eV_-0.25_0.75_0_LUT_groundair.root
+/run/beamOn 10000
+/gps/position nx ny nz mm
+/mpnd/run/path results/opticalphoton_3eV_-0.25_0.75_0.25_LUT_groundair.root
+/run/beamOn 10000
+/gps/position nx ny nz mm
+/mpnd/run/path results/opticalphoton_3eV_-0.25_0.75_0.5_LUT_groundair.root
+/run/beamOn 10000
+/gps/position nx ny nz mm
+/mpnd/run/path results/opticalphoton_3eV_-0.25_0.75_0.75_LUT_groundair.root
+/run/beamOn 10000
+/control/loop examples/run_ny.mac ny -0.75 0.75 0.25
+/control/loop examples/run_nz.mac nz -0.75 0.75 0.25
+/gps/position nx ny nz mm
+/mpnd/run/path results/opticalphoton_3eV_0_-0.75_-0.75_LUT_groundair.root
+/run/beamOn 10000
+/gps/position nx ny nz mm
+/mpnd/run/path results/opticalphoton_3eV_0_-0.75_-0.5_LUT_groundair.root
+/run/beamOn 10000
+/gps/position nx ny nz mm
+/mpnd/run/path results/opticalphoton_3eV_0_-0.75_-0.25_LUT_groundair.root
+/run/beamOn 10000
+/gps/position nx ny nz mm
+/mpnd/run/path results/opticalphoton_3eV_0_-0.75_0_LUT_groundair.root
+/run/beamOn 10000
+/gps/position nx ny nz mm
+/mpnd/run/path results/opticalphoton_3eV_0_-0.75_0.25_LUT_groundair.root
+/run/beamOn 10000
+/gps/position nx ny nz mm
+/mpnd/run/path results/opticalphoton_3eV_0_-0.75_0.5_LUT_groundair.root
+/run/beamOn 10000
+/gps/position nx ny nz mm
+/mpnd/run/path results/opticalphoton_3eV_0_-0.75_0.75_LUT_groundair.root
+/run/beamOn 10000
+/control/loop examples/run_nz.mac nz -0.75 0.75 0.25
+/gps/position nx ny nz mm
+/mpnd/run/path results/opticalphoton_3eV_0_-0.5_-0.75_LUT_groundair.root
+/run/beamOn 10000
+/gps/position nx ny nz mm
+/mpnd/run/path results/opticalphoton_3eV_0_-0.5_-0.5_LUT_groundair.root
+/run/beamOn 10000
+/gps/position nx ny nz mm
+/mpnd/run/path results/opticalphoton_3eV_0_-0.5_-0.25_LUT_groundair.root
+/run/beamOn 10000
+/gps/position nx ny nz mm
+/mpnd/run/path results/opticalphoton_3eV_0_-0.5_0_LUT_groundair.root
+/run/beamOn 10000
+/gps/position nx ny nz mm
+/mpnd/run/path results/opticalphoton_3eV_0_-0.5_0.25_LUT_groundair.root
+/run/beamOn 10000
+/gps/position nx ny nz mm
+/mpnd/run/path results/opticalphoton_3eV_0_-0.5_0.5_LUT_groundair.root
+/run/beamOn 10000
+/gps/position nx ny nz mm
+/mpnd/run/path results/opticalphoton_3eV_0_-0.5_0.75_LUT_groundair.root
+/run/beamOn 10000
+/control/loop examples/run_nz.mac nz -0.75 0.75 0.25
+/gps/position nx ny nz mm
+/mpnd/run/path results/opticalphoton_3eV_0_-0.25_-0.75_LUT_groundair.root
+/run/beamOn 10000
+/gps/position nx ny nz mm
+/mpnd/run/path results/opticalphoton_3eV_0_-0.25_-0.5_LUT_groundair.root
+/run/beamOn 10000
+/gps/position nx ny nz mm
+/mpnd/run/path results/opticalphoton_3eV_0_-0.25_-0.25_LUT_groundair.root
+/run/beamOn 10000
+/gps/position nx ny nz mm
+/mpnd/run/path results/opticalphoton_3eV_0_-0.25_0_LUT_groundair.root
+/run/beamOn 10000
+/gps/position nx ny nz mm
+/mpnd/run/path results/opticalphoton_3eV_0_-0.25_0.25_LUT_groundair.root
+/run/beamOn 10000
+/gps/position nx ny nz mm
+/mpnd/run/path results/opticalphoton_3eV_0_-0.25_0.5_LUT_groundair.root
+/run/beamOn 10000
+/gps/position nx ny nz mm
+/mpnd/run/path results/opticalphoton_3eV_0_-0.25_0.75_LUT_groundair.root
+/run/beamOn 10000
+/control/loop examples/run_nz.mac nz -0.75 0.75 0.25
+/gps/position nx ny nz mm
+/mpnd/run/path results/opticalphoton_3eV_0_0_-0.75_LUT_groundair.root
+/run/beamOn 10000
+/gps/position nx ny nz mm
+/mpnd/run/path results/opticalphoton_3eV_0_0_-0.5_LUT_groundair.root
+/run/beamOn 10000
+/gps/position nx ny nz mm
+/mpnd/run/path results/opticalphoton_3eV_0_0_-0.25_LUT_groundair.root
+/run/beamOn 10000
+/gps/position nx ny nz mm
+/mpnd/run/path results/opticalphoton_3eV_0_0_0_LUT_groundair.root
+/run/beamOn 10000
+/gps/position nx ny nz mm
+/mpnd/run/path results/opticalphoton_3eV_0_0_0.25_LUT_groundair.root
+/run/beamOn 10000
+/gps/position nx ny nz mm
+/mpnd/run/path results/opticalphoton_3eV_0_0_0.5_LUT_groundair.root
+/run/beamOn 10000
+/gps/position nx ny nz mm
+/mpnd/run/path results/opticalphoton_3eV_0_0_0.75_LUT_groundair.root
+/run/beamOn 10000
+/control/loop examples/run_nz.mac nz -0.75 0.75 0.25
+/gps/position nx ny nz mm
+/mpnd/run/path results/opticalphoton_3eV_0_0.25_-0.75_LUT_groundair.root
+/run/beamOn 10000
+/gps/position nx ny nz mm
+/mpnd/run/path results/opticalphoton_3eV_0_0.25_-0.5_LUT_groundair.root
+/run/beamOn 10000
+/gps/position nx ny nz mm
+/mpnd/run/path results/opticalphoton_3eV_0_0.25_-0.25_LUT_groundair.root
+/run/beamOn 10000
+/gps/position nx ny nz mm
+/mpnd/run/path results/opticalphoton_3eV_0_0.25_0_LUT_groundair.root
+/run/beamOn 10000
+/gps/position nx ny nz mm
+/mpnd/run/path results/opticalphoton_3eV_0_0.25_0.25_LUT_groundair.root
+/run/beamOn 10000
+/gps/position nx ny nz mm
+/mpnd/run/path results/opticalphoton_3eV_0_0.25_0.5_LUT_groundair.root
+/run/beamOn 10000
+/gps/position nx ny nz mm
+/mpnd/run/path results/opticalphoton_3eV_0_0.25_0.75_LUT_groundair.root
+/run/beamOn 10000
+/control/loop examples/run_nz.mac nz -0.75 0.75 0.25
+/gps/position nx ny nz mm
+/mpnd/run/path results/opticalphoton_3eV_0_0.5_-0.75_LUT_groundair.root
+/run/beamOn 10000
+/gps/position nx ny nz mm
+/mpnd/run/path results/opticalphoton_3eV_0_0.5_-0.5_LUT_groundair.root
+/run/beamOn 10000
+/gps/position nx ny nz mm
+/mpnd/run/path results/opticalphoton_3eV_0_0.5_-0.25_LUT_groundair.root
+/run/beamOn 10000
+/gps/position nx ny nz mm
+/mpnd/run/path results/opticalphoton_3eV_0_0.5_0_LUT_groundair.root
+/run/beamOn 10000
+/gps/position nx ny nz mm
+/mpnd/run/path results/opticalphoton_3eV_0_0.5_0.25_LUT_groundair.root
+/run/beamOn 10000
+/gps/position nx ny nz mm
+/mpnd/run/path results/opticalphoton_3eV_0_0.5_0.5_LUT_groundair.root
+/run/beamOn 10000
+/gps/position nx ny nz mm
+/mpnd/run/path results/opticalphoton_3eV_0_0.5_0.75_LUT_groundair.root
+/run/beamOn 10000
+/control/loop examples/run_nz.mac nz -0.75 0.75 0.25
+/gps/position nx ny nz mm
+/mpnd/run/path results/opticalphoton_3eV_0_0.75_-0.75_LUT_groundair.root
+/run/beamOn 10000
+/gps/position nx ny nz mm
+/mpnd/run/path results/opticalphoton_3eV_0_0.75_-0.5_LUT_groundair.root
+/run/beamOn 10000
+/gps/position nx ny nz mm
+/mpnd/run/path results/opticalphoton_3eV_0_0.75_-0.25_LUT_groundair.root
+/run/beamOn 10000
+/gps/position nx ny nz mm
+/mpnd/run/path results/opticalphoton_3eV_0_0.75_0_LUT_groundair.root
+/run/beamOn 10000
+/gps/position nx ny nz mm
+/mpnd/run/path results/opticalphoton_3eV_0_0.75_0.25_LUT_groundair.root
+/run/beamOn 10000
+/gps/position nx ny nz mm
+/mpnd/run/path results/opticalphoton_3eV_0_0.75_0.5_LUT_groundair.root
+/run/beamOn 10000
+/gps/position nx ny nz mm
+/mpnd/run/path results/opticalphoton_3eV_0_0.75_0.75_LUT_groundair.root
+/run/beamOn 10000
+/control/loop examples/run_ny.mac ny -0.75 0.75 0.25
+/control/loop examples/run_nz.mac nz -0.75 0.75 0.25
+/gps/position nx ny nz mm
+/mpnd/run/path results/opticalphoton_3eV_0.25_-0.75_-0.75_LUT_groundair.root
+/run/beamOn 10000
+/gps/position nx ny nz mm
+/mpnd/run/path results/opticalphoton_3eV_0.25_-0.75_-0.5_LUT_groundair.root
+/run/beamOn 10000
+/gps/position nx ny nz mm
+/mpnd/run/path results/opticalphoton_3eV_0.25_-0.75_-0.25_LUT_groundair.root
+/run/beamOn 10000
+/gps/position nx ny nz mm
+/mpnd/run/path results/opticalphoton_3eV_0.25_-0.75_0_LUT_groundair.root
+/run/beamOn 10000
+/gps/position nx ny nz mm
+/mpnd/run/path results/opticalphoton_3eV_0.25_-0.75_0.25_LUT_groundair.root
+/run/beamOn 10000
+/gps/position nx ny nz mm
+/mpnd/run/path results/opticalphoton_3eV_0.25_-0.75_0.5_LUT_groundair.root
+/run/beamOn 10000
+/gps/position nx ny nz mm
+/mpnd/run/path results/opticalphoton_3eV_0.25_-0.75_0.75_LUT_groundair.root
+/run/beamOn 10000
+/control/loop examples/run_nz.mac nz -0.75 0.75 0.25
+/gps/position nx ny nz mm
+/mpnd/run/path results/opticalphoton_3eV_0.25_-0.5_-0.75_LUT_groundair.root
+/run/beamOn 10000
+/gps/position nx ny nz mm
+/mpnd/run/path results/opticalphoton_3eV_0.25_-0.5_-0.5_LUT_groundair.root
+/run/beamOn 10000
+/gps/position nx ny nz mm
+/mpnd/run/path results/opticalphoton_3eV_0.25_-0.5_-0.25_LUT_groundair.root
+/run/beamOn 10000
+/gps/position nx ny nz mm
+/mpnd/run/path results/opticalphoton_3eV_0.25_-0.5_0_LUT_groundair.root
+/run/beamOn 10000
+/gps/position nx ny nz mm
+/mpnd/run/path results/opticalphoton_3eV_0.25_-0.5_0.25_LUT_groundair.root
+/run/beamOn 10000
+/gps/position nx ny nz mm
+/mpnd/run/path results/opticalphoton_3eV_0.25_-0.5_0.5_LUT_groundair.root
+/run/beamOn 10000
+/gps/position nx ny nz mm
+/mpnd/run/path results/opticalphoton_3eV_0.25_-0.5_0.75_LUT_groundair.root
+/run/beamOn 10000
+/control/loop examples/run_nz.mac nz -0.75 0.75 0.25
+/gps/position nx ny nz mm
+/mpnd/run/path results/opticalphoton_3eV_0.25_-0.25_-0.75_LUT_groundair.root
+/run/beamOn 10000
+/gps/position nx ny nz mm
+/mpnd/run/path results/opticalphoton_3eV_0.25_-0.25_-0.5_LUT_groundair.root
+/run/beamOn 10000
+/gps/position nx ny nz mm
+/mpnd/run/path results/opticalphoton_3eV_0.25_-0.25_-0.25_LUT_groundair.root
+/run/beamOn 10000
+/gps/position nx ny nz mm
+/mpnd/run/path results/opticalphoton_3eV_0.25_-0.25_0_LUT_groundair.root
+/run/beamOn 10000
+/gps/position nx ny nz mm
+/mpnd/run/path results/opticalphoton_3eV_0.25_-0.25_0.25_LUT_groundair.root
+/run/beamOn 10000
+/gps/position nx ny nz mm
+/mpnd/run/path results/opticalphoton_3eV_0.25_-0.25_0.5_LUT_groundair.root
+/run/beamOn 10000
+/gps/position nx ny nz mm
+/mpnd/run/path results/opticalphoton_3eV_0.25_-0.25_0.75_LUT_groundair.root
+/run/beamOn 10000
+/control/loop examples/run_nz.mac nz -0.75 0.75 0.25
+/gps/position nx ny nz mm
+/mpnd/run/path results/opticalphoton_3eV_0.25_0_-0.75_LUT_groundair.root
+/run/beamOn 10000
+/gps/position nx ny nz mm
+/mpnd/run/path results/opticalphoton_3eV_0.25_0_-0.5_LUT_groundair.root
+/run/beamOn 10000
+/gps/position nx ny nz mm
+/mpnd/run/path results/opticalphoton_3eV_0.25_0_-0.25_LUT_groundair.root
+/run/beamOn 10000
+/gps/position nx ny nz mm
+/mpnd/run/path results/opticalphoton_3eV_0.25_0_0_LUT_groundair.root
+/run/beamOn 10000
+/gps/position nx ny nz mm
+/mpnd/run/path results/opticalphoton_3eV_0.25_0_0.25_LUT_groundair.root
+/run/beamOn 10000
+/gps/position nx ny nz mm
+/mpnd/run/path results/opticalphoton_3eV_0.25_0_0.5_LUT_groundair.root
+/run/beamOn 10000
+/gps/position nx ny nz mm
+/mpnd/run/path results/opticalphoton_3eV_0.25_0_0.75_LUT_groundair.root
+/run/beamOn 10000
+/control/loop examples/run_nz.mac nz -0.75 0.75 0.25
+/gps/position nx ny nz mm
+/mpnd/run/path results/opticalphoton_3eV_0.25_0.25_-0.75_LUT_groundair.root
+/run/beamOn 10000
+/gps/position nx ny nz mm
+/mpnd/run/path results/opticalphoton_3eV_0.25_0.25_-0.5_LUT_groundair.root
+/run/beamOn 10000
+/gps/position nx ny nz mm
+/mpnd/run/path results/opticalphoton_3eV_0.25_0.25_-0.25_LUT_groundair.root
+/run/beamOn 10000
+/gps/position nx ny nz mm
+/mpnd/run/path results/opticalphoton_3eV_0.25_0.25_0_LUT_groundair.root
+/run/beamOn 10000
+/gps/position nx ny nz mm
+/mpnd/run/path results/opticalphoton_3eV_0.25_0.25_0.25_LUT_groundair.root
+/run/beamOn 10000
+/gps/position nx ny nz mm
+/mpnd/run/path results/opticalphoton_3eV_0.25_0.25_0.5_LUT_groundair.root
+/run/beamOn 10000
+/gps/position nx ny nz mm
+/mpnd/run/path results/opticalphoton_3eV_0.25_0.25_0.75_LUT_groundair.root
+/run/beamOn 10000
+/control/loop examples/run_nz.mac nz -0.75 0.75 0.25
+/gps/position nx ny nz mm
+/mpnd/run/path results/opticalphoton_3eV_0.25_0.5_-0.75_LUT_groundair.root
+/run/beamOn 10000
+/gps/position nx ny nz mm
+/mpnd/run/path results/opticalphoton_3eV_0.25_0.5_-0.5_LUT_groundair.root
+/run/beamOn 10000
+/gps/position nx ny nz mm
+/mpnd/run/path results/opticalphoton_3eV_0.25_0.5_-0.25_LUT_groundair.root
+/run/beamOn 10000
+/gps/position nx ny nz mm
+/mpnd/run/path results/opticalphoton_3eV_0.25_0.5_0_LUT_groundair.root
+/run/beamOn 10000
+/gps/position nx ny nz mm
+/mpnd/run/path results/opticalphoton_3eV_0.25_0.5_0.25_LUT_groundair.root
+/run/beamOn 10000
+/gps/position nx ny nz mm
+/mpnd/run/path results/opticalphoton_3eV_0.25_0.5_0.5_LUT_groundair.root
+/run/beamOn 10000
+/gps/position nx ny nz mm
+/mpnd/run/path results/opticalphoton_3eV_0.25_0.5_0.75_LUT_groundair.root
+/run/beamOn 10000
+/control/loop examples/run_nz.mac nz -0.75 0.75 0.25
+/gps/position nx ny nz mm
+/mpnd/run/path results/opticalphoton_3eV_0.25_0.75_-0.75_LUT_groundair.root
+/run/beamOn 10000
+/gps/position nx ny nz mm
+/mpnd/run/path results/opticalphoton_3eV_0.25_0.75_-0.5_LUT_groundair.root
+/run/beamOn 10000
+/gps/position nx ny nz mm
+/mpnd/run/path results/opticalphoton_3eV_0.25_0.75_-0.25_LUT_groundair.root
+/run/beamOn 10000
+/gps/position nx ny nz mm
+/mpnd/run/path results/opticalphoton_3eV_0.25_0.75_0_LUT_groundair.root
+/run/beamOn 10000
+/gps/position nx ny nz mm
+/mpnd/run/path results/opticalphoton_3eV_0.25_0.75_0.25_LUT_groundair.root
+/run/beamOn 10000
+/gps/position nx ny nz mm
+/mpnd/run/path results/opticalphoton_3eV_0.25_0.75_0.5_LUT_groundair.root
+/run/beamOn 10000
+/gps/position nx ny nz mm
+/mpnd/run/path results/opticalphoton_3eV_0.25_0.75_0.75_LUT_groundair.root
+/run/beamOn 10000
+/control/loop examples/run_ny.mac ny -0.75 0.75 0.25
+/control/loop examples/run_nz.mac nz -0.75 0.75 0.25
+/gps/position nx ny nz mm
+/mpnd/run/path results/opticalphoton_3eV_0.5_-0.75_-0.75_LUT_groundair.root
+/run/beamOn 10000
+/gps/position nx ny nz mm
+/mpnd/run/path results/opticalphoton_3eV_0.5_-0.75_-0.5_LUT_groundair.root
+/run/beamOn 10000
+/gps/position nx ny nz mm
+/mpnd/run/path results/opticalphoton_3eV_0.5_-0.75_-0.25_LUT_groundair.root
+/run/beamOn 10000
+/gps/position nx ny nz mm
+/mpnd/run/path results/opticalphoton_3eV_0.5_-0.75_0_LUT_groundair.root
+/run/beamOn 10000
+/gps/position nx ny nz mm
+/mpnd/run/path results/opticalphoton_3eV_0.5_-0.75_0.25_LUT_groundair.root
+/run/beamOn 10000
+/gps/position nx ny nz mm
+/mpnd/run/path results/opticalphoton_3eV_0.5_-0.75_0.5_LUT_groundair.root
+/run/beamOn 10000
+/gps/position nx ny nz mm
+/mpnd/run/path results/opticalphoton_3eV_0.5_-0.75_0.75_LUT_groundair.root
+/run/beamOn 10000
+/control/loop examples/run_nz.mac nz -0.75 0.75 0.25
+/gps/position nx ny nz mm
+/mpnd/run/path results/opticalphoton_3eV_0.5_-0.5_-0.75_LUT_groundair.root
+/run/beamOn 10000
+/gps/position nx ny nz mm
+/mpnd/run/path results/opticalphoton_3eV_0.5_-0.5_-0.5_LUT_groundair.root
+/run/beamOn 10000
+/gps/position nx ny nz mm
+/mpnd/run/path results/opticalphoton_3eV_0.5_-0.5_-0.25_LUT_groundair.root
+/run/beamOn 10000
+/gps/position nx ny nz mm
+/mpnd/run/path results/opticalphoton_3eV_0.5_-0.5_0_LUT_groundair.root
+/run/beamOn 10000
+/gps/position nx ny nz mm
+/mpnd/run/path results/opticalphoton_3eV_0.5_-0.5_0.25_LUT_groundair.root
+/run/beamOn 10000
+/gps/position nx ny nz mm
+/mpnd/run/path results/opticalphoton_3eV_0.5_-0.5_0.5_LUT_groundair.root
+/run/beamOn 10000
+/gps/position nx ny nz mm
+/mpnd/run/path results/opticalphoton_3eV_0.5_-0.5_0.75_LUT_groundair.root
+/run/beamOn 10000
+/control/loop examples/run_nz.mac nz -0.75 0.75 0.25
+/gps/position nx ny nz mm
+/mpnd/run/path results/opticalphoton_3eV_0.5_-0.25_-0.75_LUT_groundair.root
+/run/beamOn 10000
+/gps/position nx ny nz mm
+/mpnd/run/path results/opticalphoton_3eV_0.5_-0.25_-0.5_LUT_groundair.root
+/run/beamOn 10000
+/gps/position nx ny nz mm
+/mpnd/run/path results/opticalphoton_3eV_0.5_-0.25_-0.25_LUT_groundair.root
+/run/beamOn 10000
+/gps/position nx ny nz mm
+/mpnd/run/path results/opticalphoton_3eV_0.5_-0.25_0_LUT_groundair.root
+/run/beamOn 10000
+/gps/position nx ny nz mm
+/mpnd/run/path results/opticalphoton_3eV_0.5_-0.25_0.25_LUT_groundair.root
+/run/beamOn 10000
+/gps/position nx ny nz mm
+/mpnd/run/path results/opticalphoton_3eV_0.5_-0.25_0.5_LUT_groundair.root
+/run/beamOn 10000
+/gps/position nx ny nz mm
+/mpnd/run/path results/opticalphoton_3eV_0.5_-0.25_0.75_LUT_groundair.root
+/run/beamOn 10000
+/control/loop examples/run_nz.mac nz -0.75 0.75 0.25
+/gps/position nx ny nz mm
+/mpnd/run/path results/opticalphoton_3eV_0.5_0_-0.75_LUT_groundair.root
+/run/beamOn 10000
+/gps/position nx ny nz mm
+/mpnd/run/path results/opticalphoton_3eV_0.5_0_-0.5_LUT_groundair.root
+/run/beamOn 10000
+/gps/position nx ny nz mm
+/mpnd/run/path results/opticalphoton_3eV_0.5_0_-0.25_LUT_groundair.root
+/run/beamOn 10000
+/gps/position nx ny nz mm
+/mpnd/run/path results/opticalphoton_3eV_0.5_0_0_LUT_groundair.root
+/run/beamOn 10000
+/gps/position nx ny nz mm
+/mpnd/run/path results/opticalphoton_3eV_0.5_0_0.25_LUT_groundair.root
+/run/beamOn 10000
+/gps/position nx ny nz mm
+/mpnd/run/path results/opticalphoton_3eV_0.5_0_0.5_LUT_groundair.root
+/run/beamOn 10000
+/gps/position nx ny nz mm
+/mpnd/run/path results/opticalphoton_3eV_0.5_0_0.75_LUT_groundair.root
+/run/beamOn 10000
+/control/loop examples/run_nz.mac nz -0.75 0.75 0.25
+/gps/position nx ny nz mm
+/mpnd/run/path results/opticalphoton_3eV_0.5_0.25_-0.75_LUT_groundair.root
+/run/beamOn 10000
+/gps/position nx ny nz mm
+/mpnd/run/path results/opticalphoton_3eV_0.5_0.25_-0.5_LUT_groundair.root
+/run/beamOn 10000
+/gps/position nx ny nz mm
+/mpnd/run/path results/opticalphoton_3eV_0.5_0.25_-0.25_LUT_groundair.root
+/run/beamOn 10000
+/gps/position nx ny nz mm
+/mpnd/run/path results/opticalphoton_3eV_0.5_0.25_0_LUT_groundair.root
+/run/beamOn 10000
+/gps/position nx ny nz mm
+/mpnd/run/path results/opticalphoton_3eV_0.5_0.25_0.25_LUT_groundair.root
+/run/beamOn 10000
+/gps/position nx ny nz mm
+/mpnd/run/path results/opticalphoton_3eV_0.5_0.25_0.5_LUT_groundair.root
+/run/beamOn 10000
+/gps/position nx ny nz mm
+/mpnd/run/path results/opticalphoton_3eV_0.5_0.25_0.75_LUT_groundair.root
+/run/beamOn 10000
+/control/loop examples/run_nz.mac nz -0.75 0.75 0.25
+/gps/position nx ny nz mm
+/mpnd/run/path results/opticalphoton_3eV_0.5_0.5_-0.75_LUT_groundair.root
+/run/beamOn 10000
+/gps/position nx ny nz mm
+/mpnd/run/path results/opticalphoton_3eV_0.5_0.5_-0.5_LUT_groundair.root
+/run/beamOn 10000
+/gps/position nx ny nz mm
+/mpnd/run/path results/opticalphoton_3eV_0.5_0.5_-0.25_LUT_groundair.root
+/run/beamOn 10000
+/gps/position nx ny nz mm
+/mpnd/run/path results/opticalphoton_3eV_0.5_0.5_0_LUT_groundair.root
+/run/beamOn 10000
+/gps/position nx ny nz mm
+/mpnd/run/path results/opticalphoton_3eV_0.5_0.5_0.25_LUT_groundair.root
+/run/beamOn 10000
+/gps/position nx ny nz mm
+/mpnd/run/path results/opticalphoton_3eV_0.5_0.5_0.5_LUT_groundair.root
+/run/beamOn 10000
+/gps/position nx ny nz mm
+/mpnd/run/path results/opticalphoton_3eV_0.5_0.5_0.75_LUT_groundair.root
+/run/beamOn 10000
+/control/loop examples/run_nz.mac nz -0.75 0.75 0.25
+/gps/position nx ny nz mm
+/mpnd/run/path results/opticalphoton_3eV_0.5_0.75_-0.75_LUT_groundair.root
+/run/beamOn 10000
+/gps/position nx ny nz mm
+/mpnd/run/path results/opticalphoton_3eV_0.5_0.75_-0.5_LUT_groundair.root
+/run/beamOn 10000
+/gps/position nx ny nz mm
+/mpnd/run/path results/opticalphoton_3eV_0.5_0.75_-0.25_LUT_groundair.root
+/run/beamOn 10000
+/gps/position nx ny nz mm
+/mpnd/run/path results/opticalphoton_3eV_0.5_0.75_0_LUT_groundair.root
+/run/beamOn 10000
+/gps/position nx ny nz mm
+/mpnd/run/path results/opticalphoton_3eV_0.5_0.75_0.25_LUT_groundair.root
+/run/beamOn 10000
+/gps/position nx ny nz mm
+/mpnd/run/path results/opticalphoton_3eV_0.5_0.75_0.5_LUT_groundair.root
+/run/beamOn 10000
+/gps/position nx ny nz mm
+/mpnd/run/path results/opticalphoton_3eV_0.5_0.75_0.75_LUT_groundair.root
+/run/beamOn 10000
+/control/loop examples/run_ny.mac ny -0.75 0.75 0.25
+/control/loop examples/run_nz.mac nz -0.75 0.75 0.25
+/gps/position nx ny nz mm
+/mpnd/run/path results/opticalphoton_3eV_0.75_-0.75_-0.75_LUT_groundair.root
+/run/beamOn 10000
+/gps/position nx ny nz mm
+/mpnd/run/path results/opticalphoton_3eV_0.75_-0.75_-0.5_LUT_groundair.root
+/run/beamOn 10000
+/gps/position nx ny nz mm
+/mpnd/run/path results/opticalphoton_3eV_0.75_-0.75_-0.25_LUT_groundair.root
+/run/beamOn 10000
+/gps/position nx ny nz mm
+/mpnd/run/path results/opticalphoton_3eV_0.75_-0.75_0_LUT_groundair.root
+/run/beamOn 10000
+/gps/position nx ny nz mm
+/mpnd/run/path results/opticalphoton_3eV_0.75_-0.75_0.25_LUT_groundair.root
+/run/beamOn 10000
+/gps/position nx ny nz mm
+/mpnd/run/path results/opticalphoton_3eV_0.75_-0.75_0.5_LUT_groundair.root
+/run/beamOn 10000
+/gps/position nx ny nz mm
+/mpnd/run/path results/opticalphoton_3eV_0.75_-0.75_0.75_LUT_groundair.root
+/run/beamOn 10000
+/control/loop examples/run_nz.mac nz -0.75 0.75 0.25
+/gps/position nx ny nz mm
+/mpnd/run/path results/opticalphoton_3eV_0.75_-0.5_-0.75_LUT_groundair.root
+/run/beamOn 10000
+/gps/position nx ny nz mm
+/mpnd/run/path results/opticalphoton_3eV_0.75_-0.5_-0.5_LUT_groundair.root
+/run/beamOn 10000
+/gps/position nx ny nz mm
+/mpnd/run/path results/opticalphoton_3eV_0.75_-0.5_-0.25_LUT_groundair.root
+/run/beamOn 10000
+/gps/position nx ny nz mm
+/mpnd/run/path results/opticalphoton_3eV_0.75_-0.5_0_LUT_groundair.root
+/run/beamOn 10000
+/gps/position nx ny nz mm
+/mpnd/run/path results/opticalphoton_3eV_0.75_-0.5_0.25_LUT_groundair.root
+/run/beamOn 10000
+/gps/position nx ny nz mm
+/mpnd/run/path results/opticalphoton_3eV_0.75_-0.5_0.5_LUT_groundair.root
+/run/beamOn 10000
+/gps/position nx ny nz mm
+/mpnd/run/path results/opticalphoton_3eV_0.75_-0.5_0.75_LUT_groundair.root
+/run/beamOn 10000
+/control/loop examples/run_nz.mac nz -0.75 0.75 0.25
+/gps/position nx ny nz mm
+/mpnd/run/path results/opticalphoton_3eV_0.75_-0.25_-0.75_LUT_groundair.root
+/run/beamOn 10000
+/gps/position nx ny nz mm
+/mpnd/run/path results/opticalphoton_3eV_0.75_-0.25_-0.5_LUT_groundair.root
+/run/beamOn 10000
+/gps/position nx ny nz mm
+/mpnd/run/path results/opticalphoton_3eV_0.75_-0.25_-0.25_LUT_groundair.root
+/run/beamOn 10000
+/gps/position nx ny nz mm
+/mpnd/run/path results/opticalphoton_3eV_0.75_-0.25_0_LUT_groundair.root
+/run/beamOn 10000
+/gps/position nx ny nz mm
+/mpnd/run/path results/opticalphoton_3eV_0.75_-0.25_0.25_LUT_groundair.root
+/run/beamOn 10000
+/gps/position nx ny nz mm
+/mpnd/run/path results/opticalphoton_3eV_0.75_-0.25_0.5_LUT_groundair.root
+/run/beamOn 10000
+/gps/position nx ny nz mm
+/mpnd/run/path results/opticalphoton_3eV_0.75_-0.25_0.75_LUT_groundair.root
+/run/beamOn 10000
+/control/loop examples/run_nz.mac nz -0.75 0.75 0.25
+/gps/position nx ny nz mm
+/mpnd/run/path results/opticalphoton_3eV_0.75_0_-0.75_LUT_groundair.root
+/run/beamOn 10000
+/gps/position nx ny nz mm
+/mpnd/run/path results/opticalphoton_3eV_0.75_0_-0.5_LUT_groundair.root
+/run/beamOn 10000
+/gps/position nx ny nz mm
+/mpnd/run/path results/opticalphoton_3eV_0.75_0_-0.25_LUT_groundair.root
+/run/beamOn 10000
+/gps/position nx ny nz mm
+/mpnd/run/path results/opticalphoton_3eV_0.75_0_0_LUT_groundair.root
+/run/beamOn 10000
+/gps/position nx ny nz mm
+/mpnd/run/path results/opticalphoton_3eV_0.75_0_0.25_LUT_groundair.root
+/run/beamOn 10000
+/gps/position nx ny nz mm
+/mpnd/run/path results/opticalphoton_3eV_0.75_0_0.5_LUT_groundair.root
+/run/beamOn 10000
+/gps/position nx ny nz mm
+/mpnd/run/path results/opticalphoton_3eV_0.75_0_0.75_LUT_groundair.root
+/run/beamOn 10000
+/control/loop examples/run_nz.mac nz -0.75 0.75 0.25
+/gps/position nx ny nz mm
+/mpnd/run/path results/opticalphoton_3eV_0.75_0.25_-0.75_LUT_groundair.root
+/run/beamOn 10000
+/gps/position nx ny nz mm
+/mpnd/run/path results/opticalphoton_3eV_0.75_0.25_-0.5_LUT_groundair.root
+/run/beamOn 10000
+/gps/position nx ny nz mm
+/mpnd/run/path results/opticalphoton_3eV_0.75_0.25_-0.25_LUT_groundair.root
+/run/beamOn 10000
+/gps/position nx ny nz mm
+/mpnd/run/path results/opticalphoton_3eV_0.75_0.25_0_LUT_groundair.root
+/run/beamOn 10000
+/gps/position nx ny nz mm
+/mpnd/run/path results/opticalphoton_3eV_0.75_0.25_0.25_LUT_groundair.root
+/run/beamOn 10000
+/gps/position nx ny nz mm
+/mpnd/run/path results/opticalphoton_3eV_0.75_0.25_0.5_LUT_groundair.root
+/run/beamOn 10000
+/gps/position nx ny nz mm
+/mpnd/run/path results/opticalphoton_3eV_0.75_0.25_0.75_LUT_groundair.root
+/run/beamOn 10000
+/control/loop examples/run_nz.mac nz -0.75 0.75 0.25
+/gps/position nx ny nz mm
+/mpnd/run/path results/opticalphoton_3eV_0.75_0.5_-0.75_LUT_groundair.root
+/run/beamOn 10000
+/gps/position nx ny nz mm
+/mpnd/run/path results/opticalphoton_3eV_0.75_0.5_-0.5_LUT_groundair.root
+/run/beamOn 10000
+/gps/position nx ny nz mm
+/mpnd/run/path results/opticalphoton_3eV_0.75_0.5_-0.25_LUT_groundair.root
+/run/beamOn 10000
+/gps/position nx ny nz mm
+/mpnd/run/path results/opticalphoton_3eV_0.75_0.5_0_LUT_groundair.root
+/run/beamOn 10000
+/gps/position nx ny nz mm
+/mpnd/run/path results/opticalphoton_3eV_0.75_0.5_0.25_LUT_groundair.root
+/run/beamOn 10000
+/gps/position nx ny nz mm
+/mpnd/run/path results/opticalphoton_3eV_0.75_0.5_0.5_LUT_groundair.root
+/run/beamOn 10000
+/gps/position nx ny nz mm
+/mpnd/run/path results/opticalphoton_3eV_0.75_0.5_0.75_LUT_groundair.root
+/run/beamOn 10000
+/control/loop examples/run_nz.mac nz -0.75 0.75 0.25
+/gps/position nx ny nz mm
+/mpnd/run/path results/opticalphoton_3eV_0.75_0.75_-0.75_LUT_groundair.root
+/run/beamOn 10000
+/gps/position nx ny nz mm
+/mpnd/run/path results/opticalphoton_3eV_0.75_0.75_-0.5_LUT_groundair.root
+/run/beamOn 10000
+/gps/position nx ny nz mm
+/mpnd/run/path results/opticalphoton_3eV_0.75_0.75_-0.25_LUT_groundair.root
+/run/beamOn 10000
+/gps/position nx ny nz mm
+/mpnd/run/path results/opticalphoton_3eV_0.75_0.75_0_LUT_groundair.root
+/run/beamOn 10000
+/gps/position nx ny nz mm
+/mpnd/run/path results/opticalphoton_3eV_0.75_0.75_0.25_LUT_groundair.root
+/run/beamOn 10000
+/gps/position nx ny nz mm
+/mpnd/run/path results/opticalphoton_3eV_0.75_0.75_0.5_LUT_groundair.root
+/run/beamOn 10000
+/gps/position nx ny nz mm
+/mpnd/run/path results/opticalphoton_3eV_0.75_0.75_0.75_LUT_groundair.root
+/run/beamOn 10000

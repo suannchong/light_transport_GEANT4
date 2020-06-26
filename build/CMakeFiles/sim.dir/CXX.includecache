@@ -268,6 +268,20 @@ system_error
 iostream
 -
 
+/Users/suannchong/Desktop/Geant4/geant4.10.05.p01-install/include/Geant4/G4BooleanSolid.hh
+G4DisplacedSolid.hh
+/Users/suannchong/Desktop/Geant4/geant4.10.05.p01-install/include/Geant4/G4DisplacedSolid.hh
+G4ThreeVector.hh
+/Users/suannchong/Desktop/Geant4/geant4.10.05.p01-install/include/Geant4/G4ThreeVector.hh
+G4RotationMatrix.hh
+/Users/suannchong/Desktop/Geant4/geant4.10.05.p01-install/include/Geant4/G4RotationMatrix.hh
+G4Transform3D.hh
+/Users/suannchong/Desktop/Geant4/geant4.10.05.p01-install/include/Geant4/G4Transform3D.hh
+G4BooleanSolid.icc
+/Users/suannchong/Desktop/Geant4/geant4.10.05.p01-install/include/Geant4/G4BooleanSolid.icc
+
+/Users/suannchong/Desktop/Geant4/geant4.10.05.p01-install/include/Geant4/G4BooleanSolid.icc
+
 /Users/suannchong/Desktop/Geant4/geant4.10.05.p01-install/include/Geant4/G4BoundingEnvelope.hh
 vector
 -
@@ -329,6 +343,18 @@ G4DataVector.icc
 /Users/suannchong/Desktop/Geant4/geant4.10.05.p01-install/include/Geant4/G4DataVector.icc
 
 /Users/suannchong/Desktop/Geant4/geant4.10.05.p01-install/include/Geant4/G4DataVector.icc
+
+/Users/suannchong/Desktop/Geant4/geant4.10.05.p01-install/include/Geant4/G4DisplacedSolid.hh
+G4VSolid.hh
+/Users/suannchong/Desktop/Geant4/geant4.10.05.p01-install/include/Geant4/G4VSolid.hh
+G4RotationMatrix.hh
+/Users/suannchong/Desktop/Geant4/geant4.10.05.p01-install/include/Geant4/G4RotationMatrix.hh
+G4ThreeVector.hh
+/Users/suannchong/Desktop/Geant4/geant4.10.05.p01-install/include/Geant4/G4ThreeVector.hh
+G4Transform3D.hh
+/Users/suannchong/Desktop/Geant4/geant4.10.05.p01-install/include/Geant4/G4Transform3D.hh
+G4AffineTransform.hh
+/Users/suannchong/Desktop/Geant4/geant4.10.05.p01-install/include/Geant4/G4AffineTransform.hh
 
 /Users/suannchong/Desktop/Geant4/geant4.10.05.p01-install/include/Geant4/G4Element.hh
 globals.hh
@@ -780,6 +806,20 @@ G4String.icc
 
 /Users/suannchong/Desktop/Geant4/geant4.10.05.p01-install/include/Geant4/G4String.icc
 
+/Users/suannchong/Desktop/Geant4/geant4.10.05.p01-install/include/Geant4/G4SubtractionSolid.hh
+G4BooleanSolid.hh
+/Users/suannchong/Desktop/Geant4/geant4.10.05.p01-install/include/Geant4/G4BooleanSolid.hh
+G4VSolid.hh
+/Users/suannchong/Desktop/Geant4/geant4.10.05.p01-install/include/Geant4/G4VSolid.hh
+G4RotationMatrix.hh
+/Users/suannchong/Desktop/Geant4/geant4.10.05.p01-install/include/Geant4/G4RotationMatrix.hh
+G4ThreeVector.hh
+/Users/suannchong/Desktop/Geant4/geant4.10.05.p01-install/include/Geant4/G4ThreeVector.hh
+G4Transform3D.hh
+/Users/suannchong/Desktop/Geant4/geant4.10.05.p01-install/include/Geant4/G4Transform3D.hh
+G4AffineTransform.hh
+/Users/suannchong/Desktop/Geant4/geant4.10.05.p01-install/include/Geant4/G4AffineTransform.hh
+
 /Users/suannchong/Desktop/Geant4/geant4.10.05.p01-install/include/Geant4/G4SurfaceProperty.hh
 vector
 -
@@ -1029,4 +1069,6 @@ CLHEP/Units/SystemOfUnits.h
 /Users/suannchong/Desktop/Geant4/mpnd_suann/src/CLHEP/Units/SystemOfUnits.h
 G4LogicalBorderSurface.hh
 /Users/suannchong/Desktop/Geant4/mpnd_suann/src/G4LogicalBorderSurface.hh
+G4SubtractionSolid.hh
+/Users/suannchong/Desktop/Geant4/mpnd_suann/src/G4SubtractionSolid.hh
 

@@ -3794,6 +3794,8 @@ CMakeFiles/sim.dir/src/singlepixeldetector.cpp.o
  /Users/suannchong/Desktop/Geant4/geant4.10.05.p01-install/include/Geant4/G4Allocator.hh
  /Users/suannchong/Desktop/Geant4/geant4.10.05.p01-install/include/Geant4/G4AllocatorPool.hh
  /Users/suannchong/Desktop/Geant4/geant4.10.05.p01-install/include/Geant4/G4AutoLock.hh
+ /Users/suannchong/Desktop/Geant4/geant4.10.05.p01-install/include/Geant4/G4BooleanSolid.hh
+ /Users/suannchong/Desktop/Geant4/geant4.10.05.p01-install/include/Geant4/G4BooleanSolid.icc
  /Users/suannchong/Desktop/Geant4/geant4.10.05.p01-install/include/Geant4/G4BoundingEnvelope.hh
  /Users/suannchong/Desktop/Geant4/geant4.10.05.p01-install/include/Geant4/G4Box.hh
  /Users/suannchong/Desktop/Geant4/geant4.10.05.p01-install/include/Geant4/G4Box.icc
@@ -3802,6 +3804,7 @@ CMakeFiles/sim.dir/src/singlepixeldetector.cpp.o
  /Users/suannchong/Desktop/Geant4/geant4.10.05.p01-install/include/Geant4/G4Colour.hh
  /Users/suannchong/Desktop/Geant4/geant4.10.05.p01-install/include/Geant4/G4DataVector.hh
  /Users/suannchong/Desktop/Geant4/geant4.10.05.p01-install/include/Geant4/G4DataVector.icc
+ /Users/suannchong/Desktop/Geant4/geant4.10.05.p01-install/include/Geant4/G4DisplacedSolid.hh
  /Users/suannchong/Desktop/Geant4/geant4.10.05.p01-install/include/Geant4/G4Element.hh
  /Users/suannchong/Desktop/Geant4/geant4.10.05.p01-install/include/Geant4/G4ElementTable.hh
  /Users/suannchong/Desktop/Geant4/geant4.10.05.p01-install/include/Geant4/G4ElementVector.hh
@@ -3855,6 +3858,7 @@ CMakeFiles/sim.dir/src/singlepixeldetector.cpp.o
  /Users/suannchong/Desktop/Geant4/geant4.10.05.p01-install/include/Geant4/G4SandiaTable.hh
  /Users/suannchong/Desktop/Geant4/geant4.10.05.p01-install/include/Geant4/G4String.hh
  /Users/suannchong/Desktop/Geant4/geant4.10.05.p01-install/include/Geant4/G4String.icc
+ /Users/suannchong/Desktop/Geant4/geant4.10.05.p01-install/include/Geant4/G4SubtractionSolid.hh
  /Users/suannchong/Desktop/Geant4/geant4.10.05.p01-install/include/Geant4/G4SurfaceProperty.hh
  /Users/suannchong/Desktop/Geant4/geant4.10.05.p01-install/include/Geant4/G4Threading.hh
  /Users/suannchong/Desktop/Geant4/geant4.10.05.p01-install/include/Geant4/G4ThreeVector.hh

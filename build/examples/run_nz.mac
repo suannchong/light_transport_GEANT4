@@ -1,5 +1,8 @@
-/control/alias nz -1.
 
-/gps/pos/center nx ny nz mm
+/gps/position  nx ny nz mm
 
-/control/loop examples/run_nY.mac nY -1. 1.0 0.5
+# Set up output
+/mpnd/run/path results/opticalphoton_3eV_{nx}_{ny}_{nz}_LUT_groundair.root
+
+# Run some particles
+/run/beamOn 10000
