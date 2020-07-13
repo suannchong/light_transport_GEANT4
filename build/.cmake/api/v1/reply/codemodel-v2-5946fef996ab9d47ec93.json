@@ -1,0 +1,109 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"childIndexes" : 
+					[
+						1
+					],
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.4.3"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						2
+					]
+				},
+				{
+					"build" : "MPNDLib",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.4.3"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 1,
+					"source" : "mpndlib",
+					"targetIndexes" : 
+					[
+						0,
+						1
+					]
+				}
+			],
+			"name" : "Debug",
+			"projects" : 
+			[
+				{
+					"childIndexes" : 
+					[
+						1
+					],
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "mpndg_suann",
+					"targetIndexes" : 
+					[
+						2
+					]
+				},
+				{
+					"directoryIndexes" : 
+					[
+						1
+					],
+					"name" : "mpndlib",
+					"parentIndex" : 0,
+					"targetIndexes" : 
+					[
+						0,
+						1
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 1,
+					"id" : "G__MPNDLib::@644516cb5738f77166b7",
+					"jsonFile" : "target-G__MPNDLib-Debug-f284070f3ae2b0f25bbc.json",
+					"name" : "G__MPNDLib",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "MPNDLib::@644516cb5738f77166b7",
+					"jsonFile" : "target-MPNDLib-Debug-31d275436d66c1d9a1f5.json",
+					"name" : "MPNDLib",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "sim::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-sim-Debug-06c7d86336b9a6bb7642.json",
+					"name" : "sim",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/Users/suannchong/Desktop/Geant4/mpnd_suann/build",
+		"source" : "/Users/suannchong/Desktop/Geant4/mpnd_suann"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 0
+	}
+}

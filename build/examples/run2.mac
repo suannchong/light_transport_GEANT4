@@ -1,0 +1,9 @@
+# Set up the geometry - single pixel 
+/mpnd/geometry/singlepixel/dimensions 2 2 {thickness} mm
+/mpnd/geometry/reload
+
+# Set up output
+/mpnd/run/path results/optical_photon_2.5eV_{thickness}mm_LUT_polishedteflonair.root
+
+# Run some particles
+/run/beamOn 10000

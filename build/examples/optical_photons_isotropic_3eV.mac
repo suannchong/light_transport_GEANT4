@@ -17,7 +17,8 @@
 /mpnd/geometry/reload
 
 # Set up the gun
-/gps/energy 3.139 eV
+#/gps/energy 3.139 eV
+/gps/energy 2.583 eV
 /gps/particle opticalphoton
 /gps/pos/type Point
 /gps/ang/type iso
@@ -34,5 +35,5 @@
 
 # Loop over different positions of X, Y, Z/control/loop examples/run1.mac N 1 1000 1 
 /control/loop examples/run_nX.mac nx -0.75 0.75 0.25
-
+#/control/loop examples/run_nX.mac nx -1.75 1.75 0.5
 

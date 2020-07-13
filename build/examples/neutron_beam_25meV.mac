@@ -2,7 +2,7 @@
 /control/verbose 2
 /control/saveHistory
 /control/alias width 2
-/control/alias thickness 6
+/control/alias thickness 2
 /run/verbose 2
 
 # Initialize the run manager
@@ -52,13 +52,13 @@
 #/mpnd/sd/particle/remove opticalphoton
 
 # Loop over different scintillator thicknesses
-#/control/loop examples/run.mac thickness 1.0 3.5 0.5
+#/control/loop examples/run.mac thickness 1.5 3.5 0.5
 
 # Set up output
-/mpnd/run/path ~/Document/results/singlepixel_thickness/neutron_beam_25meV_{thickness}mm_LUT_groundair.root
+/mpnd/run/path results/neutron_beam_25meV_{thickness}mm_LUT_groundair.root
 
 # Run some particles
-/run/beamOn 10
+/run/beamOn 1000
 
 # Accumulate tracks
 #/vis/enable

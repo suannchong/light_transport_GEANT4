@@ -149,6 +149,33 @@ G__MPNDLib/fast:
 	$(MAKE) -f MPNDLib/CMakeFiles/G__MPNDLib.dir/build.make MPNDLib/CMakeFiles/G__MPNDLib.dir/build
 .PHONY : G__MPNDLib/fast
 
+src/OpticalSurface.o: src/OpticalSurface.cpp.o
+
+.PHONY : src/OpticalSurface.o
+
+# target to build an object file
+src/OpticalSurface.cpp.o:
+	$(MAKE) -f CMakeFiles/sim.dir/build.make CMakeFiles/sim.dir/src/OpticalSurface.cpp.o
+.PHONY : src/OpticalSurface.cpp.o
+
+src/OpticalSurface.i: src/OpticalSurface.cpp.i
+
+.PHONY : src/OpticalSurface.i
+
+# target to preprocess a source file
+src/OpticalSurface.cpp.i:
+	$(MAKE) -f CMakeFiles/sim.dir/build.make CMakeFiles/sim.dir/src/OpticalSurface.cpp.i
+.PHONY : src/OpticalSurface.cpp.i
+
+src/OpticalSurface.s: src/OpticalSurface.cpp.s
+
+.PHONY : src/OpticalSurface.s
+
+# target to generate assembly for a file
+src/OpticalSurface.cpp.s:
+	$(MAKE) -f CMakeFiles/sim.dir/build.make CMakeFiles/sim.dir/src/OpticalSurface.cpp.s
+.PHONY : src/OpticalSurface.cpp.s
+
 src/actioninitialization.o: src/actioninitialization.cpp.o
 
 .PHONY : src/actioninitialization.o
@@ -862,6 +889,9 @@ help:
 	@echo "... sim"
 	@echo "... MPNDLib"
 	@echo "... G__MPNDLib"
+	@echo "... src/OpticalSurface.o"
+	@echo "... src/OpticalSurface.i"
+	@echo "... src/OpticalSurface.s"
 	@echo "... src/actioninitialization.o"
 	@echo "... src/actioninitialization.i"
 	@echo "... src/actioninitialization.s"

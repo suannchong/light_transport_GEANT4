@@ -1,0 +1,43 @@
+# Basic, default settings
+/control/verbose 2
+/control/saveHistory
+/control/alias thickness 1.5
+/run/verbose 2
+
+# Initialize the run manager
+/run/numberOfThreads 4
+/run/initialize
+
+# Set up the geometry - single pixel 
+/mpnd/geometry/config singlepixel
+/mpnd/geometry/singlepixel/dimensions 2 2 {thickness} mm
+/mpnd/geometry/singlepixel/scint_mat gs20
+/mpnd/geometry/reload
+
+# Set up the gun
+/gps/energy 3.13 eV 
+/gps/particle opticalphoton
+/gps/pos/type Volume
+/gps/pos/shape Para
+/gps/pos/centre 0. 0. 0. mm
+/gps/pos/halfx 1. mm
+/gps/pos/halfy 1. mm
+/gps/pos/halfz 1. mm
+/gps/ang/type iso
+
+# Set up tracking (add to keep track, remove to discard)
+# Scintillator_sd
+/mpnd/sd/select_sd scintillator_sd
+/mpnd/sd/particle/remove e-   #default: e- in whitelist 
+
+# PMT_sd
+/mpnd/sd/select_sd pmt_sd
+#/mpnd/sd/particle/remove opticalphoton
+
+# Set up output
+/mpnd/run/path results/optical_photon_2.5eV_{thickness}mm_LUT_groundair.root
+
+# Run some particles
+/run/beamOn 10000
+
+

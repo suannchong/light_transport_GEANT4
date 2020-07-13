@@ -57,9 +57,22 @@ include CMakeFiles/sim.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/sim.dir/flags.make
 
+CMakeFiles/sim.dir/src/OpticalSurface.cpp.o: CMakeFiles/sim.dir/flags.make
+CMakeFiles/sim.dir/src/OpticalSurface.cpp.o: ../src/OpticalSurface.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/suannchong/Desktop/Geant4/mpnd_suann/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/sim.dir/src/OpticalSurface.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/sim.dir/src/OpticalSurface.cpp.o -c /Users/suannchong/Desktop/Geant4/mpnd_suann/src/OpticalSurface.cpp
+
+CMakeFiles/sim.dir/src/OpticalSurface.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/sim.dir/src/OpticalSurface.cpp.i"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/suannchong/Desktop/Geant4/mpnd_suann/src/OpticalSurface.cpp > CMakeFiles/sim.dir/src/OpticalSurface.cpp.i
+
+CMakeFiles/sim.dir/src/OpticalSurface.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/sim.dir/src/OpticalSurface.cpp.s"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/suannchong/Desktop/Geant4/mpnd_suann/src/OpticalSurface.cpp -o CMakeFiles/sim.dir/src/OpticalSurface.cpp.s
+
 CMakeFiles/sim.dir/src/actioninitialization.cpp.o: CMakeFiles/sim.dir/flags.make
 CMakeFiles/sim.dir/src/actioninitialization.cpp.o: ../src/actioninitialization.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/suannchong/Desktop/Geant4/mpnd_suann/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/sim.dir/src/actioninitialization.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/suannchong/Desktop/Geant4/mpnd_suann/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/sim.dir/src/actioninitialization.cpp.o"
 	/Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/sim.dir/src/actioninitialization.cpp.o -c /Users/suannchong/Desktop/Geant4/mpnd_suann/src/actioninitialization.cpp
 
 CMakeFiles/sim.dir/src/actioninitialization.cpp.i: cmake_force
@@ -72,7 +85,7 @@ CMakeFiles/sim.dir/src/actioninitialization.cpp.s: cmake_force
 
 CMakeFiles/sim.dir/src/basevolume.cpp.o: CMakeFiles/sim.dir/flags.make
 CMakeFiles/sim.dir/src/basevolume.cpp.o: ../src/basevolume.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/suannchong/Desktop/Geant4/mpnd_suann/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/sim.dir/src/basevolume.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/suannchong/Desktop/Geant4/mpnd_suann/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/sim.dir/src/basevolume.cpp.o"
 	/Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/sim.dir/src/basevolume.cpp.o -c /Users/suannchong/Desktop/Geant4/mpnd_suann/src/basevolume.cpp
 
 CMakeFiles/sim.dir/src/basevolume.cpp.i: cmake_force
@@ -85,7 +98,7 @@ CMakeFiles/sim.dir/src/basevolume.cpp.s: cmake_force
 
 CMakeFiles/sim.dir/src/detectorconstruction.cpp.o: CMakeFiles/sim.dir/flags.make
 CMakeFiles/sim.dir/src/detectorconstruction.cpp.o: ../src/detectorconstruction.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/suannchong/Desktop/Geant4/mpnd_suann/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/sim.dir/src/detectorconstruction.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/suannchong/Desktop/Geant4/mpnd_suann/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/sim.dir/src/detectorconstruction.cpp.o"
 	/Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/sim.dir/src/detectorconstruction.cpp.o -c /Users/suannchong/Desktop/Geant4/mpnd_suann/src/detectorconstruction.cpp
 
 CMakeFiles/sim.dir/src/detectorconstruction.cpp.i: cmake_force
@@ -98,7 +111,7 @@ CMakeFiles/sim.dir/src/detectorconstruction.cpp.s: cmake_force
 
 CMakeFiles/sim.dir/src/energyfilter.cpp.o: CMakeFiles/sim.dir/flags.make
 CMakeFiles/sim.dir/src/energyfilter.cpp.o: ../src/energyfilter.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/suannchong/Desktop/Geant4/mpnd_suann/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/sim.dir/src/energyfilter.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/suannchong/Desktop/Geant4/mpnd_suann/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/sim.dir/src/energyfilter.cpp.o"
 	/Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/sim.dir/src/energyfilter.cpp.o -c /Users/suannchong/Desktop/Geant4/mpnd_suann/src/energyfilter.cpp
 
 CMakeFiles/sim.dir/src/energyfilter.cpp.i: cmake_force
@@ -111,7 +124,7 @@ CMakeFiles/sim.dir/src/energyfilter.cpp.s: cmake_force
 
 CMakeFiles/sim.dir/src/eventaction.cpp.o: CMakeFiles/sim.dir/flags.make
 CMakeFiles/sim.dir/src/eventaction.cpp.o: ../src/eventaction.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/suannchong/Desktop/Geant4/mpnd_suann/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/sim.dir/src/eventaction.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/suannchong/Desktop/Geant4/mpnd_suann/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/sim.dir/src/eventaction.cpp.o"
 	/Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/sim.dir/src/eventaction.cpp.o -c /Users/suannchong/Desktop/Geant4/mpnd_suann/src/eventaction.cpp
 
 CMakeFiles/sim.dir/src/eventaction.cpp.i: cmake_force
@@ -124,7 +137,7 @@ CMakeFiles/sim.dir/src/eventaction.cpp.s: cmake_force
 
 CMakeFiles/sim.dir/src/filemanager.cpp.o: CMakeFiles/sim.dir/flags.make
 CMakeFiles/sim.dir/src/filemanager.cpp.o: ../src/filemanager.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/suannchong/Desktop/Geant4/mpnd_suann/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/sim.dir/src/filemanager.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/suannchong/Desktop/Geant4/mpnd_suann/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/sim.dir/src/filemanager.cpp.o"
 	/Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/sim.dir/src/filemanager.cpp.o -c /Users/suannchong/Desktop/Geant4/mpnd_suann/src/filemanager.cpp
 
 CMakeFiles/sim.dir/src/filemanager.cpp.i: cmake_force
@@ -137,7 +150,7 @@ CMakeFiles/sim.dir/src/filemanager.cpp.s: cmake_force
 
 CMakeFiles/sim.dir/src/generalmanager.cpp.o: CMakeFiles/sim.dir/flags.make
 CMakeFiles/sim.dir/src/generalmanager.cpp.o: ../src/generalmanager.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/suannchong/Desktop/Geant4/mpnd_suann/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/sim.dir/src/generalmanager.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/suannchong/Desktop/Geant4/mpnd_suann/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/sim.dir/src/generalmanager.cpp.o"
 	/Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/sim.dir/src/generalmanager.cpp.o -c /Users/suannchong/Desktop/Geant4/mpnd_suann/src/generalmanager.cpp
 
 CMakeFiles/sim.dir/src/generalmanager.cpp.i: cmake_force
@@ -150,7 +163,7 @@ CMakeFiles/sim.dir/src/generalmanager.cpp.s: cmake_force
 
 CMakeFiles/sim.dir/src/geometrymessenger.cpp.o: CMakeFiles/sim.dir/flags.make
 CMakeFiles/sim.dir/src/geometrymessenger.cpp.o: ../src/geometrymessenger.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/suannchong/Desktop/Geant4/mpnd_suann/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/sim.dir/src/geometrymessenger.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/suannchong/Desktop/Geant4/mpnd_suann/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/sim.dir/src/geometrymessenger.cpp.o"
 	/Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/sim.dir/src/geometrymessenger.cpp.o -c /Users/suannchong/Desktop/Geant4/mpnd_suann/src/geometrymessenger.cpp
 
 CMakeFiles/sim.dir/src/geometrymessenger.cpp.i: cmake_force
@@ -163,7 +176,7 @@ CMakeFiles/sim.dir/src/geometrymessenger.cpp.s: cmake_force
 
 CMakeFiles/sim.dir/src/hit.cpp.o: CMakeFiles/sim.dir/flags.make
 CMakeFiles/sim.dir/src/hit.cpp.o: ../src/hit.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/suannchong/Desktop/Geant4/mpnd_suann/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/sim.dir/src/hit.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/suannchong/Desktop/Geant4/mpnd_suann/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/sim.dir/src/hit.cpp.o"
 	/Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/sim.dir/src/hit.cpp.o -c /Users/suannchong/Desktop/Geant4/mpnd_suann/src/hit.cpp
 
 CMakeFiles/sim.dir/src/hit.cpp.i: cmake_force
@@ -176,7 +189,7 @@ CMakeFiles/sim.dir/src/hit.cpp.s: cmake_force
 
 CMakeFiles/sim.dir/src/main.cpp.o: CMakeFiles/sim.dir/flags.make
 CMakeFiles/sim.dir/src/main.cpp.o: ../src/main.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/suannchong/Desktop/Geant4/mpnd_suann/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/sim.dir/src/main.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/suannchong/Desktop/Geant4/mpnd_suann/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/sim.dir/src/main.cpp.o"
 	/Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/sim.dir/src/main.cpp.o -c /Users/suannchong/Desktop/Geant4/mpnd_suann/src/main.cpp
 
 CMakeFiles/sim.dir/src/main.cpp.i: cmake_force
@@ -189,7 +202,7 @@ CMakeFiles/sim.dir/src/main.cpp.s: cmake_force
 
 CMakeFiles/sim.dir/src/materialsmanager.cpp.o: CMakeFiles/sim.dir/flags.make
 CMakeFiles/sim.dir/src/materialsmanager.cpp.o: ../src/materialsmanager.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/suannchong/Desktop/Geant4/mpnd_suann/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/sim.dir/src/materialsmanager.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/suannchong/Desktop/Geant4/mpnd_suann/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object CMakeFiles/sim.dir/src/materialsmanager.cpp.o"
 	/Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/sim.dir/src/materialsmanager.cpp.o -c /Users/suannchong/Desktop/Geant4/mpnd_suann/src/materialsmanager.cpp
 
 CMakeFiles/sim.dir/src/materialsmanager.cpp.i: cmake_force
@@ -202,7 +215,7 @@ CMakeFiles/sim.dir/src/materialsmanager.cpp.s: cmake_force
 
 CMakeFiles/sim.dir/src/messengermanager.cpp.o: CMakeFiles/sim.dir/flags.make
 CMakeFiles/sim.dir/src/messengermanager.cpp.o: ../src/messengermanager.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/suannchong/Desktop/Geant4/mpnd_suann/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object CMakeFiles/sim.dir/src/messengermanager.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/suannchong/Desktop/Geant4/mpnd_suann/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building CXX object CMakeFiles/sim.dir/src/messengermanager.cpp.o"
 	/Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/sim.dir/src/messengermanager.cpp.o -c /Users/suannchong/Desktop/Geant4/mpnd_suann/src/messengermanager.cpp
 
 CMakeFiles/sim.dir/src/messengermanager.cpp.i: cmake_force
@@ -215,7 +228,7 @@ CMakeFiles/sim.dir/src/messengermanager.cpp.s: cmake_force
 
 CMakeFiles/sim.dir/src/particlefilter.cpp.o: CMakeFiles/sim.dir/flags.make
 CMakeFiles/sim.dir/src/particlefilter.cpp.o: ../src/particlefilter.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/suannchong/Desktop/Geant4/mpnd_suann/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building CXX object CMakeFiles/sim.dir/src/particlefilter.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/suannchong/Desktop/Geant4/mpnd_suann/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building CXX object CMakeFiles/sim.dir/src/particlefilter.cpp.o"
 	/Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/sim.dir/src/particlefilter.cpp.o -c /Users/suannchong/Desktop/Geant4/mpnd_suann/src/particlefilter.cpp
 
 CMakeFiles/sim.dir/src/particlefilter.cpp.i: cmake_force
@@ -228,7 +241,7 @@ CMakeFiles/sim.dir/src/particlefilter.cpp.s: cmake_force
 
 CMakeFiles/sim.dir/src/physicslist.cpp.o: CMakeFiles/sim.dir/flags.make
 CMakeFiles/sim.dir/src/physicslist.cpp.o: ../src/physicslist.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/suannchong/Desktop/Geant4/mpnd_suann/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building CXX object CMakeFiles/sim.dir/src/physicslist.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/suannchong/Desktop/Geant4/mpnd_suann/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building CXX object CMakeFiles/sim.dir/src/physicslist.cpp.o"
 	/Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/sim.dir/src/physicslist.cpp.o -c /Users/suannchong/Desktop/Geant4/mpnd_suann/src/physicslist.cpp
 
 CMakeFiles/sim.dir/src/physicslist.cpp.i: cmake_force
@@ -241,7 +254,7 @@ CMakeFiles/sim.dir/src/physicslist.cpp.s: cmake_force
 
 CMakeFiles/sim.dir/src/pixelarraydetector.cpp.o: CMakeFiles/sim.dir/flags.make
 CMakeFiles/sim.dir/src/pixelarraydetector.cpp.o: ../src/pixelarraydetector.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/suannchong/Desktop/Geant4/mpnd_suann/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building CXX object CMakeFiles/sim.dir/src/pixelarraydetector.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/suannchong/Desktop/Geant4/mpnd_suann/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Building CXX object CMakeFiles/sim.dir/src/pixelarraydetector.cpp.o"
 	/Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/sim.dir/src/pixelarraydetector.cpp.o -c /Users/suannchong/Desktop/Geant4/mpnd_suann/src/pixelarraydetector.cpp
 
 CMakeFiles/sim.dir/src/pixelarraydetector.cpp.i: cmake_force
@@ -254,7 +267,7 @@ CMakeFiles/sim.dir/src/pixelarraydetector.cpp.s: cmake_force
 
 CMakeFiles/sim.dir/src/primarygeneratoraction.cpp.o: CMakeFiles/sim.dir/flags.make
 CMakeFiles/sim.dir/src/primarygeneratoraction.cpp.o: ../src/primarygeneratoraction.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/suannchong/Desktop/Geant4/mpnd_suann/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Building CXX object CMakeFiles/sim.dir/src/primarygeneratoraction.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/suannchong/Desktop/Geant4/mpnd_suann/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Building CXX object CMakeFiles/sim.dir/src/primarygeneratoraction.cpp.o"
 	/Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/sim.dir/src/primarygeneratoraction.cpp.o -c /Users/suannchong/Desktop/Geant4/mpnd_suann/src/primarygeneratoraction.cpp
 
 CMakeFiles/sim.dir/src/primarygeneratoraction.cpp.i: cmake_force
@@ -267,7 +280,7 @@ CMakeFiles/sim.dir/src/primarygeneratoraction.cpp.s: cmake_force
 
 CMakeFiles/sim.dir/src/randommanager.cpp.o: CMakeFiles/sim.dir/flags.make
 CMakeFiles/sim.dir/src/randommanager.cpp.o: ../src/randommanager.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/suannchong/Desktop/Geant4/mpnd_suann/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Building CXX object CMakeFiles/sim.dir/src/randommanager.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/suannchong/Desktop/Geant4/mpnd_suann/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_18) "Building CXX object CMakeFiles/sim.dir/src/randommanager.cpp.o"
 	/Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/sim.dir/src/randommanager.cpp.o -c /Users/suannchong/Desktop/Geant4/mpnd_suann/src/randommanager.cpp
 
 CMakeFiles/sim.dir/src/randommanager.cpp.i: cmake_force
@@ -280,7 +293,7 @@ CMakeFiles/sim.dir/src/randommanager.cpp.s: cmake_force
 
 CMakeFiles/sim.dir/src/run.cpp.o: CMakeFiles/sim.dir/flags.make
 CMakeFiles/sim.dir/src/run.cpp.o: ../src/run.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/suannchong/Desktop/Geant4/mpnd_suann/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_18) "Building CXX object CMakeFiles/sim.dir/src/run.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/suannchong/Desktop/Geant4/mpnd_suann/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_19) "Building CXX object CMakeFiles/sim.dir/src/run.cpp.o"
 	/Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/sim.dir/src/run.cpp.o -c /Users/suannchong/Desktop/Geant4/mpnd_suann/src/run.cpp
 
 CMakeFiles/sim.dir/src/run.cpp.i: cmake_force
@@ -293,7 +306,7 @@ CMakeFiles/sim.dir/src/run.cpp.s: cmake_force
 
 CMakeFiles/sim.dir/src/runaction.cpp.o: CMakeFiles/sim.dir/flags.make
 CMakeFiles/sim.dir/src/runaction.cpp.o: ../src/runaction.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/suannchong/Desktop/Geant4/mpnd_suann/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_19) "Building CXX object CMakeFiles/sim.dir/src/runaction.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/suannchong/Desktop/Geant4/mpnd_suann/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_20) "Building CXX object CMakeFiles/sim.dir/src/runaction.cpp.o"
 	/Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/sim.dir/src/runaction.cpp.o -c /Users/suannchong/Desktop/Geant4/mpnd_suann/src/runaction.cpp
 
 CMakeFiles/sim.dir/src/runaction.cpp.i: cmake_force
@@ -306,7 +319,7 @@ CMakeFiles/sim.dir/src/runaction.cpp.s: cmake_force
 
 CMakeFiles/sim.dir/src/runmessenger.cpp.o: CMakeFiles/sim.dir/flags.make
 CMakeFiles/sim.dir/src/runmessenger.cpp.o: ../src/runmessenger.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/suannchong/Desktop/Geant4/mpnd_suann/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_20) "Building CXX object CMakeFiles/sim.dir/src/runmessenger.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/suannchong/Desktop/Geant4/mpnd_suann/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_21) "Building CXX object CMakeFiles/sim.dir/src/runmessenger.cpp.o"
 	/Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/sim.dir/src/runmessenger.cpp.o -c /Users/suannchong/Desktop/Geant4/mpnd_suann/src/runmessenger.cpp
 
 CMakeFiles/sim.dir/src/runmessenger.cpp.i: cmake_force
@@ -319,7 +332,7 @@ CMakeFiles/sim.dir/src/runmessenger.cpp.s: cmake_force
 
 CMakeFiles/sim.dir/src/sdmessenger.cpp.o: CMakeFiles/sim.dir/flags.make
 CMakeFiles/sim.dir/src/sdmessenger.cpp.o: ../src/sdmessenger.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/suannchong/Desktop/Geant4/mpnd_suann/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_21) "Building CXX object CMakeFiles/sim.dir/src/sdmessenger.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/suannchong/Desktop/Geant4/mpnd_suann/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_22) "Building CXX object CMakeFiles/sim.dir/src/sdmessenger.cpp.o"
 	/Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/sim.dir/src/sdmessenger.cpp.o -c /Users/suannchong/Desktop/Geant4/mpnd_suann/src/sdmessenger.cpp
 
 CMakeFiles/sim.dir/src/sdmessenger.cpp.i: cmake_force
@@ -332,7 +345,7 @@ CMakeFiles/sim.dir/src/sdmessenger.cpp.s: cmake_force
 
 CMakeFiles/sim.dir/src/sensitivedetector.cpp.o: CMakeFiles/sim.dir/flags.make
 CMakeFiles/sim.dir/src/sensitivedetector.cpp.o: ../src/sensitivedetector.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/suannchong/Desktop/Geant4/mpnd_suann/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_22) "Building CXX object CMakeFiles/sim.dir/src/sensitivedetector.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/suannchong/Desktop/Geant4/mpnd_suann/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_23) "Building CXX object CMakeFiles/sim.dir/src/sensitivedetector.cpp.o"
 	/Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/sim.dir/src/sensitivedetector.cpp.o -c /Users/suannchong/Desktop/Geant4/mpnd_suann/src/sensitivedetector.cpp
 
 CMakeFiles/sim.dir/src/sensitivedetector.cpp.i: cmake_force
@@ -345,7 +358,7 @@ CMakeFiles/sim.dir/src/sensitivedetector.cpp.s: cmake_force
 
 CMakeFiles/sim.dir/src/singlepixeldetector.cpp.o: CMakeFiles/sim.dir/flags.make
 CMakeFiles/sim.dir/src/singlepixeldetector.cpp.o: ../src/singlepixeldetector.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/suannchong/Desktop/Geant4/mpnd_suann/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_23) "Building CXX object CMakeFiles/sim.dir/src/singlepixeldetector.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/suannchong/Desktop/Geant4/mpnd_suann/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_24) "Building CXX object CMakeFiles/sim.dir/src/singlepixeldetector.cpp.o"
 	/Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/sim.dir/src/singlepixeldetector.cpp.o -c /Users/suannchong/Desktop/Geant4/mpnd_suann/src/singlepixeldetector.cpp
 
 CMakeFiles/sim.dir/src/singlepixeldetector.cpp.i: cmake_force
@@ -358,7 +371,7 @@ CMakeFiles/sim.dir/src/singlepixeldetector.cpp.s: cmake_force
 
 CMakeFiles/sim.dir/src/singleton.cpp.o: CMakeFiles/sim.dir/flags.make
 CMakeFiles/sim.dir/src/singleton.cpp.o: ../src/singleton.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/suannchong/Desktop/Geant4/mpnd_suann/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_24) "Building CXX object CMakeFiles/sim.dir/src/singleton.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/suannchong/Desktop/Geant4/mpnd_suann/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_25) "Building CXX object CMakeFiles/sim.dir/src/singleton.cpp.o"
 	/Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/sim.dir/src/singleton.cpp.o -c /Users/suannchong/Desktop/Geant4/mpnd_suann/src/singleton.cpp
 
 CMakeFiles/sim.dir/src/singleton.cpp.i: cmake_force
@@ -371,7 +384,7 @@ CMakeFiles/sim.dir/src/singleton.cpp.s: cmake_force
 
 CMakeFiles/sim.dir/src/uicmdwithtwodoublesandunit.cpp.o: CMakeFiles/sim.dir/flags.make
 CMakeFiles/sim.dir/src/uicmdwithtwodoublesandunit.cpp.o: ../src/uicmdwithtwodoublesandunit.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/suannchong/Desktop/Geant4/mpnd_suann/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_25) "Building CXX object CMakeFiles/sim.dir/src/uicmdwithtwodoublesandunit.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/suannchong/Desktop/Geant4/mpnd_suann/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_26) "Building CXX object CMakeFiles/sim.dir/src/uicmdwithtwodoublesandunit.cpp.o"
 	/Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/sim.dir/src/uicmdwithtwodoublesandunit.cpp.o -c /Users/suannchong/Desktop/Geant4/mpnd_suann/src/uicmdwithtwodoublesandunit.cpp
 
 CMakeFiles/sim.dir/src/uicmdwithtwodoublesandunit.cpp.i: cmake_force
@@ -384,7 +397,7 @@ CMakeFiles/sim.dir/src/uicmdwithtwodoublesandunit.cpp.s: cmake_force
 
 CMakeFiles/sim.dir/src/world.cpp.o: CMakeFiles/sim.dir/flags.make
 CMakeFiles/sim.dir/src/world.cpp.o: ../src/world.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/suannchong/Desktop/Geant4/mpnd_suann/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_26) "Building CXX object CMakeFiles/sim.dir/src/world.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/suannchong/Desktop/Geant4/mpnd_suann/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_27) "Building CXX object CMakeFiles/sim.dir/src/world.cpp.o"
 	/Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/sim.dir/src/world.cpp.o -c /Users/suannchong/Desktop/Geant4/mpnd_suann/src/world.cpp
 
 CMakeFiles/sim.dir/src/world.cpp.i: cmake_force
@@ -397,6 +410,7 @@ CMakeFiles/sim.dir/src/world.cpp.s: cmake_force
 
 # Object files for target sim
 sim_OBJECTS = \
+"CMakeFiles/sim.dir/src/OpticalSurface.cpp.o" \
 "CMakeFiles/sim.dir/src/actioninitialization.cpp.o" \
 "CMakeFiles/sim.dir/src/basevolume.cpp.o" \
 "CMakeFiles/sim.dir/src/detectorconstruction.cpp.o" \
@@ -427,6 +441,7 @@ sim_OBJECTS = \
 # External object files for target sim
 sim_EXTERNAL_OBJECTS =
 
+sim: CMakeFiles/sim.dir/src/OpticalSurface.cpp.o
 sim: CMakeFiles/sim.dir/src/actioninitialization.cpp.o
 sim: CMakeFiles/sim.dir/src/basevolume.cpp.o
 sim: CMakeFiles/sim.dir/src/detectorconstruction.cpp.o
@@ -519,7 +534,7 @@ sim: /Applications/root_v6.16.00/lib/libMathCore.so
 sim: /Applications/root_v6.16.00/lib/libThread.so
 sim: /Applications/root_v6.16.00/lib/libMultiProc.so
 sim: CMakeFiles/sim.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/suannchong/Desktop/Geant4/mpnd_suann/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_27) "Linking CXX executable sim"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/suannchong/Desktop/Geant4/mpnd_suann/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_28) "Linking CXX executable sim"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/sim.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

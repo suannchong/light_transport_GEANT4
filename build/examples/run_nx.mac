@@ -1,2 +1,3 @@
 
 /control/loop examples/run_ny.mac ny -0.75 0.75 0.25
+#/control/loop examples/run_ny.mac ny -1.75 1.75 0.5

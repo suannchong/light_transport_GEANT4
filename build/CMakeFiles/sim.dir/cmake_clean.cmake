@@ -1,4 +1,5 @@
 file(REMOVE_RECURSE
+  "CMakeFiles/sim.dir/src/OpticalSurface.cpp.o"
   "CMakeFiles/sim.dir/src/actioninitialization.cpp.o"
   "CMakeFiles/sim.dir/src/basevolume.cpp.o"
   "CMakeFiles/sim.dir/src/detectorconstruction.cpp.o"
