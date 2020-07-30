@@ -38,7 +38,7 @@
 /control/foreach examples/run2.mac thickness "1.5 2 6 20"
 
 # Set up output
-#/mpnd/run/path results/optical_photon_2.5eV_{thickness}mm_LUT_groundteflonair.root
+#/mpnd/run/path results/optical_photon_2.5eV_{thickness}mm_LUT_groundvm2000air.root
 
 # Run some particles
 #/run/beamOn 10000

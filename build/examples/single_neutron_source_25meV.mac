@@ -1,7 +1,6 @@
 # Basic, default settings
 /control/verbose 2
 /control/saveHistory
-/control/alias width 2
 /control/alias thickness 2
 /control/alias N 1
 /run/verbose 2
@@ -20,7 +19,7 @@
 
 # Set up the geometry - single pixel 
 /mpnd/geometry/config singlepixel
-/mpnd/geometry/singlepixel/dimensions {width} {width} {thickness} mm
+/mpnd/geometry/singlepixel/dimensions 2 2 {thickness} mm
 /mpnd/geometry/singlepixel/scint_mat gs20
 /mpnd/geometry/reload
 
@@ -36,17 +35,7 @@
 # Set up tracking (add to keep track, remove to discard)
 # Scintillator_sd
 /mpnd/sd/select_sd scintillator_sd
-
-#/mpnd/sd/particle/add alpha
-#/mpnd/sd/particle/add triton
-#/mpnd/sd/particle/add deuteron #EJ200
-#/mpnd/sd/particle/add C13      #EJ200
-
 /mpnd/sd/particle/remove e-   #default: e- in whitelist 
-#/mpnd/sd/particle/remove alpha
-#/mpnd/sd/particle/remove triton
-#/mpnd/sd/particle/remove deuteron  #EJ200
-#/mpnd/sd/particle/remove C13       #EJ200
 
 # PMT_sd
 /mpnd/sd/select_sd pmt_sd

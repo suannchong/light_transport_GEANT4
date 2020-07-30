@@ -1,7 +1,6 @@
 # Basic, default settings
 /control/verbose 2
 /control/saveHistory
-/control/alias width 2
 /control/alias thickness 2
 /run/verbose 2
 
@@ -19,7 +18,7 @@
 
 # Set up the geometry - single pixel 
 /mpnd/geometry/config singlepixel
-/mpnd/geometry/singlepixel/dimensions {width} {width} {thickness} mm
+/mpnd/geometry/singlepixel/dimensions 2 2 {thickness} mm
 /mpnd/geometry/singlepixel/scint_mat gs20
 /mpnd/geometry/reload
 
@@ -35,7 +34,7 @@
 # Set up tracking (add to keep track, remove to discard)
 # Scintillator_sd
 /mpnd/sd/select_sd scintillator_sd
-
+# mpnd/sd/particle/add opticalphoton
 #/mpnd/sd/particle/add alpha
 #/mpnd/sd/particle/add triton
 #/mpnd/sd/particle/add deuteron #EJ200
@@ -49,18 +48,15 @@
 
 # PMT_sd
 /mpnd/sd/select_sd pmt_sd
-#/mpnd/sd/particle/remove opticalphoton
+# /mpnd/sd/particle/remove opticalphoton
 
 # Loop over different scintillator thicknesses
-#/control/loop examples/run.mac thickness 1.5 3.5 0.5
+/control/foreach examples/run.mac thickness "1.5 2.0 3.0 6.0"
 
 # Set up output
-/mpnd/run/path results/neutron_beam_25meV_{thickness}mm_LUT_groundair.root
+#/mpnd/run/path results/neutron_beam_25meV_{thickness}mm_LUT_polishedtioair.root
 
 # Run some particles
-/run/beamOn 1000
+#/run/beamOn 100
 
-# Accumulate tracks
-#/vis/enable
-#/vis/viewer/flush
 

@@ -2,8 +2,11 @@
 /mpnd/geometry/singlepixel/dimensions 2 2 {thickness} mm
 /mpnd/geometry/reload
 
+# Loop over different N event
+/control/loop examples/run1.mac N 1 1000 1 
+
 # Set up output
-/mpnd/run/path results/singlepixel_thickness/dielectric-LUT/neutron_beam_25meV_{thickness}mm_LUT_groundair.root
+#/mpnd/run/path results/neutron_beam_25meV_{thickness}mm_polishedtioair.root
 
 # Run some particles
-/run/beamOn 10000
+#/run/beamOn 10000

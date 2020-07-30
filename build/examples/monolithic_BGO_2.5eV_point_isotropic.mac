@@ -17,12 +17,7 @@
 # Set up the gun
 /gps/energy 2.583 eV 
 /gps/particle opticalphoton
-/gps/pos/type Volume
-/gps/pos/shape Para
-/gps/pos/centre 0. 0. 0. mm
-/gps/pos/halfx 1. cm
-/gps/pos/halfy 1. cm
-/gps/pos/halfz 1. cm
+/gps/pos/centre 1. 1. 1. mm
 /gps/ang/type iso
 
 # Set up tracking (add to keep track, remove to discard)
@@ -35,10 +30,10 @@
 #/mpnd/sd/particle/remove opticalphoton
 
 # Loop over different scintillator thicknesses
-/control/foreach examples/run2.mac thickness "1.5 2 6 20"
+/control/foreach examples/run2.mac thickness "0.25 2 6 20"
 
 # Set up output
-#/mpnd/run/path results/optical_photon_2.5eV_{thickness}mm_LUT_groundair.root
+#/mpnd/run/path results/monolithic_optical_photons_2.5eV_{thickness}mm_LUT_groundair.root
 
 # Run some particles
 #/run/beamOn 10000

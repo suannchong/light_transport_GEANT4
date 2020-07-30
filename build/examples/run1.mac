@@ -1,6 +1,6 @@
 
 # Set up output
-/mpnd/run/path results/single_neutron_source/reduced_sipm_area/polishedtioair_4mm/single_neutron_source_25meV_4mm_{N}_LUT_polishedtioair.root
+/mpnd/run/path results/single_neutron_source_25meV_{N}_{thickness}_polishedtioair.root
 
 # Run some particles
-/run/beamOn 10
+/run/beamOn 1

@@ -1,8 +1,17 @@
 
-/gps/position  nx ny nz mm
+/gps/pos/centre {nx} {ny} {nz} mm
+
+# Set up tracking (add to keep track, remove to discard)
+# Scintillator_sd
+/mpnd/sd/select_sd scintillator_sd
+/mpnd/sd/particle/remove e-   #default: e- in whitelist 
+
+# PMT_sd
+/mpnd/sd/select_sd pmt_sd
+#/mpnd/sd/particle/remove opticalphoton
 
 # Set up output
-/mpnd/run/path results/opticalphoton_3eV_{nx}_{ny}_{nz}_LUT_groundair.root
+/mpnd/run/path results/opticalphoton_3eV_{nx}_{ny}_{nz}_LUT_polishedair.root
 
 # Run some particles
-/run/beamOn 10000
+/run/beamOn 6000
