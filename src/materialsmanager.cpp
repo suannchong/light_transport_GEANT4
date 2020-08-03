@@ -65,7 +65,7 @@ namespace MPND {
 
     // Add optical properties to G4_AIR - note, this is global!
     auto ptair = new G4MaterialPropertiesTable;
-    double energies[2] = { 1.*eV, 6.*eV };
+    double energies[2] = { 1.*eV, 7.*eV };
     double r_ind[2] = { 1., 1. };
     double abs[2] = { 2000.*m, 2000.*m };
     ptair->AddProperty("RINDEX", energies, r_ind, 2);
@@ -82,7 +82,8 @@ namespace MPND {
     auto ptsipm = new G4MaterialPropertiesTable;
     double energies[2] = {1. * eV, 6. * eV};
     double r_ind[2] = {1., 1.};
-    double abs[2] = {2000. * m, 2000. * m};
+    double abs[2] = {1. * cm, 1. * cm};
+
     ptsipm->AddProperty("RINDEX", energies, r_ind, 2);
     ptsipm->AddProperty("ABSLENGTH", energies, abs, 2);
     m_materials[Material::Air]->SetMaterialPropertiesTable(ptsipm);
@@ -144,7 +145,7 @@ namespace MPND {
     bsiglass->AddElement(nist_man->FindOrBuildElement(5), 2);
     double energies[3] = { 2.*eV, 3.5*eV, 5*eV };
     double index[3] = { 1.482, 1.502, 1.533 };
-    double abs[3] = { 1.*mm, 1.*mm, 1.*mm };
+    double abs[3] = { 1.*cm, 1.*cm, 1.*cm };
     auto pt = new G4MaterialPropertiesTable;
     pt->AddProperty("RINDEX", energies, index, 3);
     pt->AddProperty("ABSLENGTH", energies, abs, 3);
@@ -176,20 +177,11 @@ namespace MPND {
     ce2o3->AddElement(nist_man->FindOrBuildElement(58),2);
     ce2o3->AddElement(nist_man->FindOrBuildElement(8),3);
 
-    gs20->AddMaterial(nist_man->FindOrBuildMaterial("G4_SILICON_DIOXIDE"),57*perCent);
+    gs20->AddMaterial(nist_man->FindOrBuildMaterial("G4_SILICON_DIOXIDE"), 57*perCent);
     gs20->AddMaterial(nist_man->FindOrBuildMaterial("G4_ALUMINUM_OXIDE"), 18*perCent);
     gs20->AddMaterial(nist_man->FindOrBuildMaterial("G4_MAGNESIUM_OXIDE"), 4*perCent);
     gs20->AddMaterial(nist_man->FindOrBuildMaterial("enriched_LITHIUM_OXIDE"),     17*perCent);
     gs20->AddMaterial(nist_man->FindOrBuildMaterial("CERIUM(III)_OXIDE"),  4*perCent);
-
-    // // Surface finishes and properties
-    // auto opScintSurface = new G4OpticalSurface("ScintillatorSurface");
-    // opScintSurface->SetType(dielectric_dielectric);
-    // opScintSurface->SetFinish(polished);  // ground = rough surface
-    // opScintSurface->SetModel(unified);
-
-    // auto ScintSurface = new G4LogicalSkinSurface("ScintillatorSurface",  volume_log ,opScintSurface);
-
 
     // Optical properties
     auto pt20 = new G4MaterialPropertiesTable;
@@ -202,16 +194,17 @@ namespace MPND {
     // All fast component, no slow component
     pt20->AddConstProperty("YIELDRATIO", 1.);
 
-    G4double energies[2] = {1.771147508*eV, 6.149039422*eV};
-    G4double r_ind[2] = {1.55, 1.55};
-    G4double abs[2] = {1000. * m, 1000. * m};
-    G4double ref[2] = {1.0, 1.0};
-    G4double efficiency[2] = {1., 1.};
+    // G4double energies[2] = {1.771147508*eV, 6.149039422*eV};
+    // G4double r_ind[2] = {1.55, 1.55};
+    // G4double abs[2] = {.5 * mm, .5 * mm};
+    // G4double ref[2] = {1.0, 1.0};
+    // G4double efficiency[2] = {1., 1.};
     
-    pt20->AddProperty("RINDEX", energies, r_ind, 2);
-    pt20->AddProperty("ABSLENGTH", energies, abs, 2);
-    pt20->AddProperty("REFLECTIVITY", energies, abs, 2);
-    pt20->AddProperty("EFFICIENCY", energies, abs, 2);
+    // pt20->AddProperty("RINDEX", energies, r_ind, 2);
+    // pt20->AddProperty("ABSLENGTH", energies, abs, 2);
+    // pt20->AddProperty("REFLECTIVITY", energies, ref, 2);
+    // pt20->AddProperty("EFFICIENCY", energies, efficiency, 2);
+
     // Emission wavelength spectrum - TODO
     G4double ScintEnergy[] = {
         1.771147508*eV, 1.785693715*eV, 1.806886491*eV, 1.835205916*eV, 1.859861711*eV, 1.887526235 *eV,
@@ -260,7 +253,53 @@ namespace MPND {
         0.004514673, 0.004514673, 0.004514673, 0.004514673, 0.006772009, 0.006772009, 
         0.009029345, 0.006772009, 0.006772009,
     };
+
+    G4double r_ind[nPoints] = {
+        1.55, 1.55, 1.55, 1.55, 1.55, 1.55, 1.55,
+        1.55, 1.55, 1.55, 1.55, 1.55, 1.55, 1.55,
+        1.55, 1.55, 1.55, 1.55, 1.55, 1.55, 1.55,
+        1.55, 1.55, 1.55, 1.55, 1.55, 1.55, 1.55,
+        1.55, 1.55, 1.55, 1.55, 1.55, 1.55, 1.55,
+        1.55, 1.55, 1.55, 1.55, 1.55, 1.55, 1.55,
+        1.55, 1.55, 1.55, 1.55, 1.55, 1.55, 1.55,
+        1.55, 1.55, 1.55, 1.55, 1.55, 1.55, 1.55,
+        1.55, 1.55, 1.55, 1.55, 1.55, 1.55, 1.55,
+        1.55, 1.55, 1.55, 1.55, 1.55, 1.55, 1.55,
+        1.55, 1.55, 1.55, 1.55, 1.55, 1.55, 1.55,
+        1.55, 1.55, 1.55, 1.55, 1.55, 1.55, 1.55,
+        1.55, 1.55, 1.55, 1.55, 1.55, 1.55, 1.55,
+        1.55, 1.55, 1.55, 1.55, 1.55, 1.55, 1.55,
+        1.55, 1.55, 1.55, 1.55, 1.55, 1.55, 1.55,
+        1.55, 1.55, 1.55, 1.55, 1.55, 1.55, 1.55,
+        1.55, 1.55, 1.55, 1.55, 1.55
+    };
+
+    G4double abs[nPoints] = {
+        100*cm, 100*cm, 100*cm, 100*cm, 100*cm, 100*cm, 
+        100*cm, 100*cm, 100*cm, 100*cm, 100*cm, 100*cm, 
+        100*cm, 100*cm, 100*cm, 100*cm, 100*cm, 100*cm, 
+        100*cm, 100*cm, 100*cm, 100*cm, 100*cm, 100*cm, 
+        100*cm, 100*cm, 100*cm, 100*cm, 100*cm, 100*cm, 
+        100*cm, 100*cm, 100*cm, 100*cm, 100*cm, 100*cm, 
+        100*cm, 100*cm, 100*cm, 100*cm, 100*cm, 100*cm, 
+        100*cm, 100*cm, 100*cm, 100*cm, 100*cm, 100*cm, 
+        100*cm, 100*cm, 100*cm, 100*cm, 100*cm, 100*cm, 
+        100*cm, 100*cm, 100*cm, 100*cm, 100*cm, 100*cm, 
+        100*cm, 100*cm, 100*cm, 100*cm, 100*cm, 100*cm, 
+        100*cm, 100*cm, 100*cm, 100*cm, 100*cm, 100*cm, 
+        100*cm, 100*cm, 100*cm, 100*cm, 100*cm, 100*cm, 
+        100*cm, 100*cm, 100*cm, 100*cm, 100*cm, 100*cm, 
+        100*cm, 100*cm, 100*cm, 100*cm, 100*cm, 100*cm, 
+        100*cm, 100*cm, 100*cm, 100*cm, 100*cm, 100*cm, 
+        100*cm, 100*cm, 100*cm, 100*cm, 100*cm, 100*cm, 
+        100*cm, 100*cm, 100*cm, 100*cm, 100*cm, 100*cm, 
+        100*cm, 100*cm, 100*cm, 100*cm, 100*cm, 100*cm, 
+        100*cm, 100*cm, 100*cm
+      };
+
     pt20->AddProperty("FASTCOMPONENT", ScintEnergy, ScintFast, nPoints);
+    pt20->AddProperty("RINDEX", ScintEnergy, r_ind, nPoints);
+    pt20->AddProperty("ABSLENGTH", ScintEnergy, abs, nPoints);
 
     gs20->SetMaterialPropertiesTable(pt20);
     m_materials[Material::GS20] = gs20;

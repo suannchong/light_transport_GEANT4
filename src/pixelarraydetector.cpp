@@ -73,30 +73,6 @@ namespace MPND {
     auto scint_log = new G4LogicalVolume(scint_solid, mat, lname);
     scint_log->SetVisAttributes(m_vis);
 
-    // Optical surface
-    // Surface finishes and properties
-    auto opScintSurface = new G4OpticalSurface("ScintillatorSurface");
-    opScintSurface->SetType(dielectric_LUT);
-    opScintSurface->SetModel(LUT);
-    opScintSurface->SetFinish(groundteflonair); // ground = rough surface
-
-    // opScintSurface->SetSigmaAlpha(0.1);
-
-    G4LogicalSkinSurface *scintSurface = new G4LogicalSkinSurface("ScintillatorSurface", scint_log, opScintSurface);
-    G4MaterialPropertiesTable *OpSurfaceProperty = new G4MaterialPropertiesTable();
-
-    const G4int pmt_n = 2;
-    G4double pmt_energies[pmt_n] = {.1 * eV, 7. * eV};
-    G4double pmt_r_ind[pmt_n] = {1.55, 1.55};
-    G4double pmt_ref[pmt_n] = {1.0, 1.0};
-    G4double pmt_efficiency[pmt_n] = {1., 1.};
-
-    OpSurfaceProperty->AddProperty("RINDEX", pmt_energies, pmt_r_ind, pmt_n);
-    OpSurfaceProperty->AddProperty("REFLECTIVITY", pmt_energies, pmt_ref, pmt_n);
-    OpSurfaceProperty->AddProperty("EFFICIENCY", pmt_energies, pmt_efficiency, pmt_n);
-
-    opScintSurface->SetMaterialPropertiesTable(OpSurfaceProperty);
-
     // Connect this logical volume to the scintillator SD
     auto dc = GeneralManager::get().getDetectorConstruction();
     dc->linkLVSD(lname, "scintillator_sd");
@@ -134,30 +110,6 @@ namespace MPND {
     pmt_vis->SetForceWireframe(true);
     pmt_vis->SetColor(G4Color::Magenta());
     pmt_log->SetVisAttributes(pmt_vis);
-
-    // // Optical surface
-    // // Surface finishes and properties
-    // auto opPMTSurface = new G4OpticalSurface("PMTSurface");
-    // opPMTSurface->SetType(dielectric_dielectric);
-    // opPMTSurface->SetModel(LUT);
-    // opPMTSurface->SetFinish(PolishedTeflon_LUT); // ground = rough surface
-
-    // // opScintSurface->SetSigmaAlpha(0.1);
-
-    // G4LogicalSkinSurface *PMTSurface = new G4LogicalSkinSurface("PMTSurface", scint_log, opScintSurface);
-    // G4MaterialPropertiesTable *OpPMTSurfaceProperty = new G4MaterialPropertiesTable();
-
-    // const G4int n = 2;
-    // G4double energies[n] = {.1 * eV, 7. * eV};
-    // G4double r_ind[n] = {1.55, 1.55};
-    // G4double ref[n] = {1.0, 1.0};
-    // G4double efficiency[n] = {1., 1.};
-
-    // OpPMTSurfaceProperty->AddProperty("RINDEX", energies, r_ind, n);
-    // OpPMTSurfaceProperty->AddProperty("REFLECTIVITY", energies, ref, n);
-    // OpPMTSurfaceProperty->AddProperty("EFFICIENCY", energies, efficiency, n);
-
-    // opPMTSurface->SetMaterialPropertiesTable(OpPMTSurfaceProperty);
 
     dc->linkLVSD(lname, "pmt_sd");
 

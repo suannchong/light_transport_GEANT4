@@ -1,6 +1,6 @@
 # (M)odular (P)ixelated (N)eutron (D)etector Geant4 Simulation #
 # Introduction #
-Adapted from micahfolsom.
+Adapted from https://github.com/micahfolsom/mgg4
 
 # Dependencies #
 Geant4, ROOT

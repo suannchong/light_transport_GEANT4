@@ -47,7 +47,7 @@ namespace MPND {
                         m_dimensions.z() / 2.0);
 
     auto& mat_man = MaterialsManager::get();
-    auto mat = mat_man.get(Material::Vacuum);
+    auto mat = mat_man.get(Material::Air);
     auto lname = m_name + "_log";
     m_logical = new G4LogicalVolume(m_solid, mat, lname);
 
